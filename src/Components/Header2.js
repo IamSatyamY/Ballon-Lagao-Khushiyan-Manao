@@ -79,6 +79,19 @@ const Header2 = () => {
                 </ul>
               </li>
               {/* end of inflatable sky balloon dropdown */}
+              
+              {/*  Inflatable  tent  Dropdown */}
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Inflatable Tent
+                </a>
+                <ul className="dropdown-menu">
+                  <li><a className="dropdown-item" href="#">Campaingn Tents</a></li>
+                  <li><a className="dropdown-item" href="#">Disaster Tents</a></li>
+                  <li><a className="dropdown-item" href="#">Hospitality</a></li>
+                </ul>
+              </li>
+              {/* end of inflatable tent dropdown */}
 
 
               {/* kids play Dropdown */}

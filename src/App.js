@@ -6,6 +6,7 @@ import Contact from "./Pages/Contact";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Footer from "./Components/Footer";
+import Cart from "./Pages/Cart";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
               <Route path="/" element={<Home/>} />
               <Route path="/about" element={<About/>} />
               <Route path="/contact" element={<Contact/>} />
-              {/* <Route path="/" element={<Sliders/>} /> */}
+              <Route path="/cart" element={<Cart/>} />
             </Routes>
           </BrowserRouter>
         {/* Routing */}

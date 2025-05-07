@@ -4,6 +4,7 @@ import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { FiFacebook,FiInstagram  } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa6";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./Header1.css";
 
 function Header1() {
@@ -26,12 +27,15 @@ function Header1() {
                 </ul>
 
                 <div className="d-flex social-media" style={{ fontSize: "20px" }}>
-                <a className="nav-link mx-3 text-white" href="https://www.facebook.com/balloonlagao" target="_blank" rel="noopener noreferrer">
-                    <FiFacebook />
-                </a>
-                <a className="nav-link text-white" href="https://www.instagram.com/balloonlagao/" target="_blank" rel="noopener noreferrer">
-                    <FiInstagram />
-                </a>
+                    <a className="nav-link text-white" href="/cart" target="_blank" rel="noopener noreferrer">
+                        <AiOutlineShoppingCart />
+                    </a>
+                    <a className="nav-link mx-3 text-white" href="https://www.facebook.com/balloonlagao" target="_blank" rel="noopener noreferrer">
+                        <FiFacebook />
+                    </a>
+                    <a className="nav-link text-white" href="https://www.instagram.com/balloonlagao/" target="_blank" rel="noopener noreferrer">
+                        <FiInstagram />
+                    </a>
                 </div>
             </div>
         </nav>

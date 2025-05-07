@@ -1,0 +1,20 @@
+.cartpage1 h2{
+    text-align: center;
+}
+.cartpage{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-products{
+    border: 2px solid rgb(235, 0, 0);
+    
+}
+.cart-products .product{
+    border: 2px solid rgb(235, 0, 0);
+    
+
+}
+.checkout{
+    border: 2px solid rgb(144, 130, 23);
+}
