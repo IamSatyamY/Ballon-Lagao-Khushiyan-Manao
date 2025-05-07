@@ -1,0 +1,15 @@
+nav{
+    background-color: #7c7c7c;
+}
+
+.fixed-whatsapp{
+    /* background-color: blue; */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.fixed-whatsapp:hover{
+    /* background-color: blue; */
+    box-shadow: 0 3px 3px 2px green;
+    /* border-radius: 50%; */
+}

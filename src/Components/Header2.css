@@ -1,0 +1,34 @@
+.dropdown .dropdown-toggle {
+    text-decoration: none;
+    color: black;
+}
+.navbar-brand img{
+    margin: 0 40px ;
+}
+/* category */
+.header2-nav .dropdown-toggle, .header2-nav .nav-link{
+    font-size:14px ;
+}
+.header2-nav  .dropdown-item li{
+    /* background: transparent; */
+    border-bottom: 2px solid black;
+
+}
+
+/* category elements */
+.dropdown-menu li{
+    font-size: 14px;
+}
+
+  /* Optional: Change dropdown item text color */
+  .dropdown-item {
+    color: #000; /* Black text */
+  }
+  
+  /* Optional: Change hover background and text color */
+  .dropdown-item:hover {
+    background-color: #dcdcdc;
+    color: #000;
+  }
+
+  
