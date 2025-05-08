@@ -1,12 +1,14 @@
 import React from 'react'
 import "./About.css"
 import mdimg from '../assets/md.png'
+import { FiInstagram } from 'react-icons/fi'
+import { FaLinkedin } from 'react-icons/fa6'
 const About = () => {
   return (
     <div className='container about'>
 
       <h1 className='about-heading'> Our Story </h1>
-
+      {/* md page */}
       <div className='about-allinfo'>
         <div className='about-para'>
           
@@ -30,10 +32,23 @@ const About = () => {
             Managing Director
           </p>
           <img src={mdimg}></img>
+          <div className='social'>
+            <a className="nav-link mx-3 " href="https://in.linkedin.com/in/abrar-ahmed-2397b232a?trk=public_profile_samename-profile" target="_self" rel="noopener noreferrer">
+                <FaLinkedin  />
+            </a>
+            <a className="nav-link " href="https://www.instagram.com/abrar_ahmed_ghosi/" target="_self" rel="noopener noreferrer">
+                <FiInstagram />
+            </a>
 
-        </div>
+          </div>
+          </div>
       </div>
 
+      {/* Management team */}
+
+      {/* Digital Marketing Team */}
+
+      {/* Web Team */}
     </div>
   )
 }

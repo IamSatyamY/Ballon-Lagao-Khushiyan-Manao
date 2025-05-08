@@ -6,6 +6,7 @@ import { FiFacebook,FiInstagram  } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa6";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./Header1.css";
+import { RiAdminLine } from "react-icons/ri";
 
 function Header1() {
   return (
@@ -27,7 +28,10 @@ function Header1() {
                 </ul>
 
                 <div className="d-flex social-media" style={{ fontSize: "20px" }}>
-                    <a className="nav-link text-white" href="/cart" target="_blank" rel="noopener noreferrer">
+                    <a className="nav-link text-white" href="/admin" target="_self" rel="noopener noreferrer">
+                        <RiAdminLine />
+                    </a>&nbsp;&nbsp;&nbsp;
+                    <a className="nav-link text-white" href="/cart" target="_self" rel="noopener noreferrer">
                         <AiOutlineShoppingCart />
                     </a>
                     <a className="nav-link mx-3 text-white" href="https://www.facebook.com/balloonlagao" target="_blank" rel="noopener noreferrer">
@@ -36,6 +40,8 @@ function Header1() {
                     <a className="nav-link text-white" href="https://www.instagram.com/balloonlagao/" target="_blank" rel="noopener noreferrer">
                         <FiInstagram />
                     </a>
+                    {/* https://www.instagram.com/abrar_ahmed_ghosi/ */}
+                    {/* https://in.linkedin.com/in/abrar-ahmed-2397b232a?trk=public_profile_samename-profile */}
                 </div>
             </div>
         </nav>

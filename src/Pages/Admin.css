@@ -1,0 +1,28 @@
+
+.admin-login{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    height:700px;
+    justify-content: center;
+    align-items: center;
+    background:url("../assets/giphy.gif"),rgb(55, 161, 41);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  0;
+    /* background-color: rgb(19, 64, 64); */
+}
+.admin-login input{
+    width: 300px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.admin-login input[type="submit"]{
+    background-color: rgb(39, 111, 166);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    width:200px;
+}
