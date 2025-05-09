@@ -8,6 +8,7 @@ import Home from "./Pages/Home";
 import Footer from "./Components/Footer";
 import Cart from "./Pages/Cart";
 import Admin from "./Pages/Admin";
+import TandCpage from "./Pages/TandCpage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/contact" element={<Contact/>} />
               <Route path="/cart" element={<Cart/>} />
               <Route path="/admin" element={<Admin/>} />
+              <Route path="/tandc" element={<TandCpage/>} />
             </Routes>
           </BrowserRouter>
         {/* Routing */}
