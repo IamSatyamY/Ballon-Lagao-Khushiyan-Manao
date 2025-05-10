@@ -1,4 +1,24 @@
  .sliders-img-containe img{
+    /* height: 600px; */
+    width: 100%;
+    background-color: rgb(223, 212, 200);
+    /* padding: 40px 0; */
+ }
+ .sliders-img-containe img {
     height: 600px;
     width: 100%;
+    /* padding: 40px 0; */
  }
+
+ .carousel-inner img{
+   width: 100%;
+ }
+
+ /* coloring arrows */
+ .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+  background-color: rgb(135, 116, 116);
+  border-radius: 50%;
+  padding: 10px;
+}

@@ -1,0 +1,35 @@
+.home-products{
+    background-color: #fafafa;
+}
+.home-products .card{
+    /* width: 200px;
+    height: 200px; */
+    /* border: 2px solid grey; */
+    margin: 20px;
+    
+}
+
+.home-products .products{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid green; */
+    margin: 20px;
+    justify-content: space-around;
+
+}
+.home-products h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(158, 115, 137);
+    padding: 20px;
+    margin-top: 50px;
+    color: rgb(255, 255, 255)
+}
+
+.card .card-body{
+    display: flex;   
+}
+.card .card-body{
+    display: flex;   
+    justify-content: space-around
+}

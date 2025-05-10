@@ -2,14 +2,29 @@ nav{
     background-color: #7c7c7c;
 }
 
-.fixed-whatsapp{
-    /* background-color: blue; */
+.fixed-whatsapp {
+    background-color: white;
+    /* box-shadow: 0 3px 3px 2px green; */
+    font-weight: bold;
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    right: 0px;
+    z-index: 100;
+    border-radius: 50%;
+    /* padding: 10px; */
+    animation: floatUpDown 2s ease-in-out infinite;
 }
+
+/* Animation keyframes */
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 .fixed-whatsapp:hover{
     /* background-color: blue; */
-    box-shadow: 0 3px 3px 2px green;
-    /* border-radius: 50%; */
 }
