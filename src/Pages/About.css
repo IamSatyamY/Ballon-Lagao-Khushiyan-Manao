@@ -11,6 +11,7 @@
 }
 .about-allinfo{
     display: flex;
+    flex-wrap: wrap;
 }
 .about-allinfo .about-para,.about-allinfo .mdinfo{
     /* border: 2px solid black; */

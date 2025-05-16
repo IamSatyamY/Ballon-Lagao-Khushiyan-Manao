@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Header2 = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img src={logo} style={{ width: "150px", borderRadius: "10px" }} alt="Logo" />
@@ -15,14 +15,14 @@ const Header2 = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse header2-nav" id="navbarSupportedContent">
-            <ul className="navbar-nav w-100 d-flex justify-content-between" style={{ fontSize: "20px" }}>
+            <ul className="navbar-nav w-100 d-flex justify-content-center justify-content-lg-between" style={{ fontSize: "20px" }}>
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">About Us</a>
+                <a className="nav-link" href="/about">AboutUs</a>
               </li>
 
               {/* Products Dropdown */}
@@ -31,9 +31,9 @@ const Header2 = () => {
                   Products
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" id="mkul" href="#">Latex Balloon</a></li>
-                  <li><a className="dropdown-item" href="#">Party Item</a></li>
-                  <li><a className="dropdown-item" href="#">Foil Balloons</a></li>
+                  <li><a className="dropdown-item" id="mkul" href="/product/latex">Latex Balloon</a></li>
+                  <li><a className="dropdown-item" href="/product/party-item">Party Item</a></li>
+                  <li><a className="dropdown-item" href="/product/foil-balloons">Foil Balloons</a></li>
                 </ul>
               </li>
 
@@ -117,7 +117,7 @@ const Header2 = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li><a className="dropdown-item" href="#">Balloon Decoration</a></li>
-                  <li><a className="dropdown-item" href="#">Hellium Balloon</a></li>
+                  <li><a className="dropdown-item" href="/helium-balloons">Hellium Balloon</a></li>
                   <li><a className="dropdown-item" href="#">Garland Balloon Decoration</a></li>
                   <li><a className="dropdown-item" href="#">Backdrop Panels</a></li>
                   <li><a className="dropdown-item" href="#">Dashing Entry</a></li>

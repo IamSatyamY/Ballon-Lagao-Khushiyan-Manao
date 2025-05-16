@@ -7,8 +7,10 @@
 }
 .non-map{
     /* border: 2px solid grey; */
+    margin-top: 50px;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     /* padding: 20px; */
     margin-bottom: 30px;
@@ -21,6 +23,7 @@
     padding: 10px;
     text-align: center;
     padding-top: 30px;
+    margin-bottom: 20px;
     background-color: #9cb8bb;
 
 }.non-map .single-element .logo{
@@ -45,4 +48,29 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .non-map .single-element {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .non-map {
+    justify-content: center;
+  }
+
+  .map {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map div {
+    width: 100%;
+    border-width: 10px;
+  }
 }

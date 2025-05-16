@@ -1,0 +1,54 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+  background-color: rgb(135, 116, 116);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.reviews{
+  /* border: 2px solid red; */
+}
+.reviews h1{
+  /* border: 2px solid red; */
+  background-color:rgb(55, 158, 165);
+  /* margin-bottom: -10px; */
+  border-radius: 10px;
+  box-shadow: 0 10px 10px grey;
+  
+  color:rgb(229, 235, 240);
+  text-shadow: 2px 2px grey;
+  padding: 15px;
+  font-family: sans-serif;
+}
+.reviews #carouselExampleAutoplaying1{
+  /* border: 2px solid rgb(0, 101, 252); */
+}
+.reviews #carouselExampleAutoplaying1 .carousel-item{
+  /* border: 5px solid rgb(147, 252, 0); */
+  text-align: center;
+  background-color: #ecbbdc;
+  height:220px;
+}
+.reviews #carouselExampleAutoplaying1 .carousel-item div{
+  margin: 20px;
+  font-weight: bold;
+}
+.reviews #carouselExampleAutoplaying1 .carousel-item div.name{
+  /* margin: 20px;
+  font-weight: bold; */
+  font-size: 25px;
+  font-family: cursive;
+  /* background-color:beige; */
+  color:white
+}
+.reviews #carouselExampleAutoplaying1 .carousel-item div.rating{
+  color:rgb(240, 213, 61)
+}
+.reviews #carouselExampleAutoplaying1 .carousel-item div.text{
+  /* margin: 20px;
+  font-weight: bold; */
+  font-family: cursive;
+
+}
+

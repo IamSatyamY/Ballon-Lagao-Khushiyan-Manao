@@ -1,6 +1,4 @@
-import Header1 from "./Components/Header1";
-import Header2 from "./Components/Header2";
-import Sliders from "./Components/Sliders";
+
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
@@ -9,13 +7,19 @@ import Footer from "./Components/Footer";
 import Cart from "./Pages/Cart";
 import Admin from "./Pages/Admin";
 import TandCpage from "./Pages/TandCpage";
+import ParticlesBackground from "./Components/ParticlesBackground";
+import BalloonTrail from "./Components/BalloonTrail";
+import Product from "./Pages/Product";
+import MainHeader from "./Components/MainHeader";
+
 
 function App() {
   return (
     <>
       <div>
-        <Header1/>
-        <Header2/>
+        <ParticlesBackground />
+         <BalloonTrail />
+          <MainHeader/>
         {/* Routing */}
           <BrowserRouter>
             <Routes>
@@ -25,6 +29,7 @@ function App() {
               <Route path="/cart" element={<Cart/>} />
               <Route path="/admin" element={<Admin/>} />
               <Route path="/tandc" element={<TandCpage/>} />
+              <Route path="/product" element={<Product/>} />
             </Routes>
           </BrowserRouter>
         {/* Routing */}

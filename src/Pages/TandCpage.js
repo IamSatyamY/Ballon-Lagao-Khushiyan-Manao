@@ -5,33 +5,53 @@ const TandCpage = () => {
     <div className='container text-justify'>
         <h1 className='text-center'>Terms and Conditions</h1>
         
-        <p>By using this site the user has unconditionally accepted the terms and conditions of use as given hereunder and/or elsewhere in the site.</p>
-        
-        <p>·The user may carefully read all the information on products and services as provided in    relevant sections and in FAQs</p>
-        
-        <p>This site is owned by "site " . No material from this site or any other website owned, operated, controlled or licensed by TMBS  and/or its associates or its sister concerns may be copied, reproduced, republished, transmitted, downloaded, uploaded or in any other manner for commercial use or otherwise without the written permission of the TMBS. Violation of this condition is a violation of copyright and other proprietary rights of the Company and/or its associates or sister concerns or affiliates</p>
-        
-        <p>The products/services provided on this site are without warranties of any kind either expressed or implied and TMBS disclaims all or any of them fully. TMBS does not warrant that the products/services offered will be error-free, or that the defects will be corrected, or that this site or the server that makes it available are or will be free of viruses or other harmful components. Any warranties or After Sale Services if any offered by the Manufacturers/Vendors on any product shall be serviced directly by such Manufacturer/Vendor and TMBS shall not be under any obligation to ensure compliance or handle complaints</p>
-        
-        <p>There is sometime a possibility of extra charges like Octroi, Taxes or Duties which are to be borne by the recipient at the time of delivery. Please note that TMBS does not control these charges</p>
-        
-        <p>For Flowers, Sweets and chocolate or other items that are perishable in nature, the delivery would be attempted only once. If the delivery is not executed during that attempt due to incorrect or insufficient address, recipient not at home, address found locked or refusal to accept, the customer shall still be charged for the order. No refunds would be entertained for such items.</p>
-        
-        <p>Since flower arrangements are hand-made, there may be a slight variation from the picture shown. However, we will make sure that we deliver the flower arrangement as close as possible to the description/ photograph shown</p>
-        
-        <p>The product specifications (weight, size, color etc.) mentioned with the product photos are only approximate. Most products here are handmade items. There may, hence, be a variation in the pictures and the respective products. TMBS, at its absolute discretion, may deliver a similar / alternate product reasons or exigencies beyond its control</p>
-        
-        <p>Under no circumstances whatsoever shall TMBS be liable for any loss of data, loss of profits or any damages whatsoever including, without limiting, any indirect, special, incidental, consequential or other damages that result from the use of or inability to use the products/services offered on the site Notwithstanding the foregoing, in no event shall TMBS be liable to the user for any or all damages, losses, and causes of action (including but not limited to, negligence) or otherwise exceeding the amount paid by the user to TMBS for that specific service/product</p>
-        
-        <p>In an effort to provide our customers with the most current information, TMBS will, from time to time, make changes in the Contents and in the products or services described on this Site. The prices advertised on this Site are for Internet orders. Prices and the availability of items are subject to change without notice. Any prices used on this Site may not be indicative of the actual selling prices in your area. We reserve the right to limit sales, including the right to prohibit sales to re-sellers. We are not responsible for typographical or photographic errors</p>
-        
-        <p>Users who have availed services through "site link" by selecting one or more listed service providers:"site link" reaches out to these users via SMS / E-mail / Call / Whats App messages Online after their scheduled appointment schedule and ask them for Feedback on their experience or inform them on the latest product updates from the Service provider. "site link" has complete ownership of this flow of feedback collection</p>
-        
-        <p>Notwithstanding any or all of the terms, conditions & disclaimers stated herein above and in FAQ or elsewhere in the site, any refund or payment by TMB to the user or anyone else acting on his behalf for any reason whatsoever, voluntarily or on being claimed by any user shall not become a waiver of any or all of the Terms, Conditions and Disclaimers made and shall not become a precedent for similar future actions/claims or confer any rights on the claimant. AND further that all such refunds/payments if any when made shall be subject to 10% deduction on account of Bank charges and other processing overheads</p>
-        
-        <p>If the user has any questions, doubts or confusion in regard to any of the terms & conditions set out herein, he should seek clarifications from us through email ("site link") and should wait for a written clarification before using the service</p>
-        
-        <p>The user of TMB is presumed to have read all the terms and conditions herein and FAQ and is deemed to have agreed, understood and accepted unconditionally all the terms, conditions, procedures and risks of using the services and cannot at any time claim ignorance of any or all of them. In event of any disputes between the parties in connection with any provision, both the parties hereto, shall endeavor to settle dispute amicably. In event Parties fail to settle within 30 days, the dispute shall be referred to sole Arbitrator, governed by the Arbitration and Conciliation Act, 1996. All the disputes will subject to the Judiciary of Delhi Jurisdiction.</p>
+        <ul>
+            <li>By using this website, the user automatically and unconditionally agrees to the terms and conditions outlined here and/or elsewhere on the site.</li>
+
+            <li>Users are encouraged to thoroughly read all product and service information provided in the relevant sections.</li>
+
+            <li>This website is owned by "BalloonLagao.com". All content on this site and any other site owned or managed by BalloonLagao.com or its affiliates is protected by copyright laws. No part of this material may be copied, reproduced, republished, transmitted, downloaded, or otherwise used for any commercial or other purposes without BalloonLagao.com ’s written permission. Unauthorized use is a violation of copyright and intellectual property rights.</li>
+
+            <dl><b>Product & Service Disclaimer</b>
+              <li>Products and services on this site are offered “as is” without any guarantees or warranties, either express or implied. BalloonLagao.com does not guarantee that services/products will be error-free, or that any issues will be corrected. Additionally, we do not warrant that the site or its servers are free from viruses or other harmful elements. Any warranties or after-sales services provided by manufacturers or vendors must be dealt with directly by them. BalloonLagao.com holds no responsibility for such matters.</li>
+            </dl>
+
+            <dl><b>Additional Charges</b>
+              <li>Some orders may incur extra charges like taxes, duties, or Octroi, which must be paid by the recipient at the time of delivery. BalloonLagao.com does not have control over these charges.</li>
+            </dl>
+
+            <dl><b>Delivery for Perishable Items</b>
+              <li>If unsuccessful due to wrong or incomplete address, recipient unavailability, or refusal, the order will still be considered delivered and no refunds will be issued.</li>
+            </dl>
+
+            <dl><b>Product Variations</b>
+              <li>As many products are handmade, there may be slight differences between product photos and the actual items delivered. balloon arrangements and other such items may not look exactly like their pictures, but we strive to ensure close resemblance. balloonlagao reserves the right to substitute products with similar ones if required.</li>
+            </dl>
+
+            <dl><b>Limitation of Liability</b>
+              <li>BalloonLagao.com will not be liable for any loss of data, profits, or any other indirect, incidental, or consequential damages arising from the use or inability to use the products/services. Any liability from balloonlagao will not exceed the actual amount paid by the user for the specific product/service.</li>
+            </dl>
+
+            <dl><b>Changes and Errors</b>
+              <li>BalloonLagao.com  may update site content and product/service information at any time without prior notice. Prices shown are applicable to online purchases and may vary locally. We reserve the right to limit sales or deny service to resellers. balloonlagao is not responsible for any typographical or photographic errors on the site.</li>
+            </dl>
+
+            <dl><b>Feedback and Communication</b>
+              <li>Users who book services through the site may receive follow-up communication via SMS, email, calls, or WhatsApp for feedback or updates. The site holds complete ownership of this feedback process.</li>
+            </dl>
+
+            <dl><b>Refund Policy</b>
+              <li>Any refund issued voluntarily or upon a user’s claim will not set a precedent for future claims and will not override these terms. All refunds, if applicable, are subject to a 10% deduction for bank and processing charges.</li>
+            </dl>
+
+            <dl><b>Clarifications</b>
+              <li>If users have questions or doubts regarding any terms, they should contact us via email at "support@balloonlagao.com" and wait for a written response before using the services.</li>
+            </dl>
+
+            <dl><b>Legal Jurisdiction and Disputes</b>
+              <li>By using this site, users confirm they have read, understood, and accepted all terms, conditions, and risks involved. In case of any disputes, parties will attempt to resolve the matter amicably. If unresolved within 30 days, disputes will be referred to a sole arbitrator under the Arbitration and Conciliation Act, 1996. All legal matters will fall under the jurisdiction of Delhi courts.</li>
+            </dl>
+        </ul>
     </div>
   )
 }

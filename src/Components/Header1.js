@@ -48,7 +48,7 @@ function Header1() {
 
         <span className='fixed-whatsapp'>
             <a className="nav-link text-white" href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">
-                <FaWhatsapp className="text-success fw-bold" style={{ fontSize: "50px" }}/>
+                <FaWhatsapp className=" fw-bold" style={{ fontSize: "50px" }}/>
             </a>
         </span>
     </div>

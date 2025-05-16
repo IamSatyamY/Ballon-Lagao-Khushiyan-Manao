@@ -1,48 +1,48 @@
 import React from 'react'
-import s1   from '../assets/homepagesliders/luxory (2).jpg';
-import s2   from '../assets/homepagesliders/luxory (52).jpg';
-import s3   from '../assets/homepagesliders/luxory (60).jpg';
-import s4   from '../assets/homepagesliders/luxory (68).jpg'
-import s5   from '../assets/homepagesliders/luxory (69).jpg';
-import s6   from '../assets/homepagesliders/luxory (79).jpg';
-import s7   from '../assets/homepagesliders/luxory (88).jpg';
-import s8   from '../assets/homepagesliders/luxory (91).jpg'
+import s1   from '../assets/homepagesliders/sliders (6).jpg';
+import s2   from '../assets/homepagesliders/sliders (22).jpg';
+import s3   from '../assets/homepagesliders/sliders (9).jpg';
+import s4   from '../assets/homepagesliders/sliders (4).jpg'
+import s5   from '../assets/homepagesliders/sliders (5).jpg';
+import s6   from '../assets/homepagesliders/sliders (3).jpg';
+import s7   from '../assets/homepagesliders/sliders (21).jpg';
+import s8   from '../assets/homepagesliders/sliders (15).jpg';
 
 import './Sliders.css';
 function Sliders() {
   return (
     <>
-        <div id="carouselExampleAutoplaying" className="carousel slide sliders-img-containe" data-bs-ride="carousel">
+        <div id="carouselExampleAutoplaying" className="carousel slide sliders-img-containe" data-bs-ride="carousel" data-bs-interval="2000">
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={s1} className="d-block w-100" alt="..."  style={{ objectFit: 'contain', width:"100%",  margin: '0 auto' }}  />
+                    <img src={s1} className="d-block w-100" alt="..."   />
                 </div>
 
                 <div className="carousel-item">
-                    <img src={s2} className="d-block w-100" alt="..."  style={{ objectFit: 'contain', width:"100%", margin: '0 auto' }} />
+                    <img src={s2} className="d-block w-100" alt="..."   />
                 </div>
 
                 <div className="carousel-item">
-                    <img src={s3} className="d-block w-100" alt="..."  style={{ objectFit: 'contain', width:"100%", margin: '0 auto' }} />
+                    <img src={s3} className="d-block w-100" alt="..."   />
                 </div>
 
                 <div className="carousel-item">
-                    <img src={s4} className="d-block w-100" alt="..."  style={{ objectFit: 'contain', width:"100%", margin: '0 auto' }} />
+                    <img src={s4} className="d-block w-100" alt="..."   />
                 </div>
                 <div className="carousel-item ">
-                    <img src={s5} className="d-block w-100" alt="..."  style={{ objectFit: 'contain', width:"100%", margin: '0 auto' }} />
+                    <img src={s5} className="d-block w-100" alt="..."   />
                 </div>
 
                 <div className="carousel-item">
-                    <img src={s6} className="d-block w-100" alt="..."  style={{ objectFit: 'contain', width:"100%", margin: '0 auto' }} />
+                    <img src={s6} className="d-block w-100" alt="..."   />
                 </div>
 
                 <div className="carousel-item">
-                    <img src={s7} className="d-block w-100" alt="..."  style={{ objectFit: 'contain', width:"100%", margin: '0 auto' }} />
+                    <img src={s7} className="d-block w-100" alt="..."   />
                 </div>
 
                 <div className="carousel-item">
-                    <img src={s8} className="d-block w-100" alt="..."  style={{ objectFit: 'contain', width:"100%", margin: '0 auto' }} />
+                    <img src={s8} className="d-block w-100" alt="..."   />
                 </div>
 
                 

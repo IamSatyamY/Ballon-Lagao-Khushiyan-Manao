@@ -1,0 +1,15 @@
+.fixed-top-headers {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050; /* make sure it's above other elements */
+}
+
+.fixed-top-headers > * {
+  width: 100%;
+}
+
+/* Push the page content down so it doesn't hide behind fixed headers */
+body {
+  padding-top: 150px; /* adjust based on combined header height */
+}
