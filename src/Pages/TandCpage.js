@@ -2,7 +2,7 @@ import React from 'react'
 
 const TandCpage = () => {
   return (
-    <div className='container text-justify'>
+    <div className='container text-justify' style={{marginTop:"65px"}}>
         <h1 className='text-center'>Terms and Conditions</h1>
         
         <ul>

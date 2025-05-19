@@ -1,0 +1,7 @@
+.slidevideos .carousel-item{
+    /* width: 1%; */
+}
+.slidevideos .carousel-item iframe{
+    width: 100%;
+    height:500px;
+}

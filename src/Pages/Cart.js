@@ -1,9 +1,10 @@
 import React from 'react'
 import './Cart.css'
+import { Link } from 'react-router-dom'
 import items  from "../data/Data"
 const Cart = () => {
   return (
-    <div className='cartpage1'>
+    <div className='cartpage1' style={{marginTop:"65px"}}>
         <h2>Items to buy</h2>
         <div className='cartpage'>
             {/* cart products */}
@@ -13,7 +14,7 @@ const Cart = () => {
                         return(
                             <div className='product'>
                                 <div className='item-img'>
-                                    <img src={val.imgNm}/>
+                                    <img src={val.imgNm} alt=''/>
                                 </div>
                                 {/* <div className='item'>{val.}</div> */}
                                 <div className='quantity'>{val.desc}</div>
@@ -43,7 +44,7 @@ const Cart = () => {
                 <p>Total items : 5</p>
                 <p>Total price : ₹ 12,500</p>
                 <button>Checkout</button><br/>
-                <span><a href="/">Continue Shopping</a></span>
+                <span><Link to="/">Continue Shopping</Link></span>
             </div>
 
 

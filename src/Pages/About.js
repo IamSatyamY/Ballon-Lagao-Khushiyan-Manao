@@ -5,7 +5,7 @@ import { FiInstagram } from 'react-icons/fi'
 import { FaLinkedin } from 'react-icons/fa6'
 const About = () => {
   return (
-    <div className='container about'>
+    <div className='container about' style={{marginTop:"65px"}}>
 
       <h1 className='about-heading'> Our Story </h1>
       {/* md page */}

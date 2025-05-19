@@ -1,11 +1,11 @@
 import React from 'react'
 import "./HomeCategoryGrouping.css"
 import kids from "../assets/homeGrouping/kidsballoon.png";
-import babyshower from "../assets/homeGrouping/babyshower.png";
-import birthday from "../assets/homeGrouping/birthday.png";
+import babyshower from "../assets/homeGrouping/babyshower.jpg";
+import birthday from "../assets/homeGrouping/birthday.jpg";
 import wedding from "../assets/homeGrouping/weddingballoons.png"
 import skyballoon from "../assets/homeGrouping/skyballoon.jpeg"
-import printedballoon from "../assets/homeGrouping/printedballoon.png"
+import printedballoon from "../assets/homeGrouping/printedballoon.jpg"
 
 
 const HomeCategoryGrouping = () => {
@@ -30,7 +30,7 @@ const HomeCategoryGrouping = () => {
                 {/* item */}
                 <div className='item'>
                     <h2 className='text-center'>Sky balloon</h2>
-                    <img src={skyballoon} style={{width:"400px",backgroundColor:"blue",borderRadius:"50px"}}/>
+                    <img src={skyballoon} style={{width:"100%",backgroundColor:"blue",borderRadius:"50px"}}/>
                 </div>
                 {/* item para*/}
                 <div className='item-para'>
@@ -51,9 +51,9 @@ const HomeCategoryGrouping = () => {
                 </div>
                 {/* item */}
                 {/* item */}
-                <div className='item'>
+                <div className='item' >
                     <h2 className='text-center'>Printed Balloon</h2>
-                    <img src={printedballoon}/>
+                    <img src={printedballoon}  style={{height:"90%"}}/>
                 </div>
                 {/* item */}
             </div>

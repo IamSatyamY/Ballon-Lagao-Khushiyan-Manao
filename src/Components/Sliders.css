@@ -1,15 +1,18 @@
  .sliders-img-containe img{
     /* height: 600px; */
-    width: 100%;
+    /* width: 100%; */
     background-color: rgb(223, 212, 200);
     /* padding: 40px 0; */
  }
  .sliders-img-containe img {
-    height: 600px;
+    /* height: 600px; */
     /* width: 100%; */
     /* padding: 40px 0; */
  }
 
+  .carousel-inner{
+    margin-top: 20px;
+  }
  .carousel-inner img{
    width: 100%;
  }

@@ -1,7 +1,8 @@
 .contact-div{
     /* border: 2px solid red; */
-    background-color: rgb(225, 225, 218);
+    /* background-color: rgb(225, 225, 218); */
     padding-bottom: 50px;
+    margin-top: 80px;
     /* padding-left:50px;
     padding-right:50px; */
 }
@@ -24,7 +25,7 @@
     text-align: center;
     padding-top: 30px;
     margin-bottom: 20px;
-    background-color: #9cb8bb;
+    background-color: #dde7e8;
 
 }.non-map .single-element .logo{
     font-size: 30px;
@@ -42,7 +43,7 @@
     display: flex;
 }
 .map div{
-    border: 20px solid rgb(181, 174, 174);
+    border: 20px solid rgb(243, 237, 237);
     width: 80%;
     border-radius: 10px;
     text-align: center;

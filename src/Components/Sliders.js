@@ -15,34 +15,34 @@ function Sliders() {
         <div id="carouselExampleAutoplaying" className="carousel slide sliders-img-containe" data-bs-ride="carousel" data-bs-interval="2000">
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={s1} className="d-block w-100" alt="..."   />
+                    <img src={s1} className="d-block " alt="..."   />
                 </div>
 
                 <div className="carousel-item">
-                    <img src={s2} className="d-block w-100" alt="..."   />
+                    <img src={s2} className="d-block " alt="..."   />
                 </div>
 
                 <div className="carousel-item">
-                    <img src={s3} className="d-block w-100" alt="..."   />
+                    <img src={s3} className="d-block " alt="..."   />
                 </div>
 
                 <div className="carousel-item">
-                    <img src={s4} className="d-block w-100" alt="..."   />
+                    <img src={s4} className="d-block " alt="..."   />
                 </div>
                 <div className="carousel-item ">
-                    <img src={s5} className="d-block w-100" alt="..."   />
+                    <img src={s5} className="d-block " alt="..."   />
                 </div>
 
                 <div className="carousel-item">
-                    <img src={s6} className="d-block w-100" alt="..."   />
+                    <img src={s6} className="d-block " alt="..."   />
                 </div>
 
                 <div className="carousel-item">
-                    <img src={s7} className="d-block w-100" alt="..."   />
+                    <img src={s7} className="d-block " alt="..."   />
                 </div>
 
                 <div className="carousel-item">
-                    <img src={s8} className="d-block w-100" alt="..."   />
+                    <img src={s8} className="d-block " alt="..."   />
                 </div>
 
                 

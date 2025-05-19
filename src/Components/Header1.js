@@ -7,6 +7,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./Header1.css";
 import { RiAdminLine } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 function Header1() {
   return (
@@ -28,12 +29,12 @@ function Header1() {
                 </ul>
 
                 <div className="d-flex social-media" style={{ fontSize: "20px" }}>
-                    <a className="nav-link text-white" href="/admin" target="_self" rel="noopener noreferrer">
+                    <Link className="nav-link text-white" to="/admin" target="_self" rel="noopener noreferrer">
                         <RiAdminLine />
-                    </a>&nbsp;&nbsp;&nbsp;
-                    <a className="nav-link text-white" href="/cart" target="_self" rel="noopener noreferrer">
+                    </Link>&nbsp;&nbsp;&nbsp;
+                    <Link className="nav-link text-white" to="/cart" target="_self" rel="noopener noreferrer">
                         <AiOutlineShoppingCart />
-                    </a>
+                    </Link>
                     <a className="nav-link mx-3 text-white" href="https://www.facebook.com/balloonlagao" target="_blank" rel="noopener noreferrer">
                         <FiFacebook />
                     </a>

@@ -3,6 +3,8 @@ import "./Contact.css"
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
 
 const Contact = () => {
   return (
@@ -28,13 +30,13 @@ const Contact = () => {
           
           <div className='single-element'>
             <div className='logo'>
-              <a className="nav-link" href="mailto:support@balloonlagao.com">
+              <Link className="nav-link" to="mailto:support@balloonlagao.com">
                 <MdEmail />
                 {/* <p>Email</p> */}
                 {/* <span> */}
                   {/* support@balloonlagao.com */}
                   {/* </span> */}
-              </a>
+              </Link>
             </div>
             <div className='head'> 
               <p>Email</p>
@@ -48,14 +50,14 @@ const Contact = () => {
         
           <div className='single-element' >
             <div className='logo'>
-              <a className="nav-link" href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">
+              <Link className="nav-link" to="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">
                 <FaPhoneAlt />
                 {/* <p>Phone</p> */}
                 {/* <span> */}
                   {/* +91-7666325325<br/>
                   +91-7666326326<br/> */}
                 {/* </span> */}
-              </a>
+              </Link>
             </div>
 
             <div className='head'> 

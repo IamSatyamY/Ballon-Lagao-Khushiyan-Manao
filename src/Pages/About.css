@@ -1,12 +1,13 @@
 /* *{font-size: 25px;} */
 .about{
-    background-color: rgb(226, 228, 207);
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid #08315a; */
 }
 .about-heading{
     text-align: center;
     margin-top: 60px;
-    color: rgb(30, 61, 68);
-    background-color: #4c80b5b6;
+    color: rgb(255, 255, 255);
+    background-color: #08315a;
     padding: 15px;
 }
 .about-allinfo{

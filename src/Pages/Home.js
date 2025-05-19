@@ -5,6 +5,7 @@ import HomeCategoryGrouping from '../Components/HomeCategoryGrouping'
 import Ourgallery from '../Components/Ourgallery'
 import Reviews from '../Components/Reviews'
 import WhyToChooseUS from '../Components/WhyToChooseUS'
+import Slidevideos from '../Components/Slidevideos'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <QuickView/>
       <HomeCategoryGrouping/>
       <Ourgallery/>
+      <Slidevideos/>
       <Reviews/>
       <WhyToChooseUS/>
     </div>
