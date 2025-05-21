@@ -5,6 +5,10 @@
     left:0px
 } */
 
+*{
+    font-family: "roboto";
+}
+
 .fixed-whatsapp {
     background-color: rgb(0, 128, 4);
     /* color:white; */
@@ -32,4 +36,11 @@
 
 .fixed-whatsapp:hover{
     /* background-color: blue; */
+}
+
+@media screen and (max-width: 800px) {
+    .social-media .nav-link {
+        /* margin: -10px; */
+    }
+
 }

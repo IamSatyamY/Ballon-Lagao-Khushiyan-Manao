@@ -19,17 +19,9 @@ const QuickView = () => {
 
             
             {/* cards */}
-            <div className="card"  style={{"textAlign":"center","padding":"10px"}}>
-                <Helmet>
-                    <title>Balloon Lagao - Celebrate with Style!</title>
-                    <meta property="og:title" content="Balloon Lagao - Celebrate with Style!" />
-                    <meta property="og:description" content="Find the best balloon decorations and event supplies." />
-                    <meta property="og:image" content="https://yourdomain.com/images/preview.jpg" />
-                    <meta property="og:url" content="https://yourdomain.com/" />
-                    <meta property="og:type" content="website" />
-                </Helmet>
+            <div className="card"  style={{"textAlign":"center"}}>
                 <p>The Magic Balloons Red Glasses </p>
-                <span style={{"marginBottom":"10px","fontSize":"20px","fontWeight":"bold"}}>₹600.00</span>
+                <span style={{"fontSize":"20px","fontWeight":"bold","marginTop":"-20px"}}>₹600.00</span>
                 <img className="card-img-top" src={bouquet} alt="Card image cap"/>
                 <div className="card-body">
                     <p className="card-text">
@@ -47,9 +39,9 @@ const QuickView = () => {
             </div>
             {/* cards */}
             {/* cards */}
-            <div className="card"  style={{"textAlign":"center","padding":"10px"}}>
+            <div className="card"  style={{"textAlign":"center"}}>
                 <p>The Magic Balloons Red Glasses </p>
-                <span style={{"marginBottom":"10px","fontSize":"20px","fontWeight":"bold"}}>₹600.00</span>
+                <span style={{"fontSize":"20px","fontWeight":"bold","marginTop":"-20px"}}>₹600.00</span>
                 <img className="card-img-top" src={event1} alt="Card image cap"/>
                 <div className="card-body">
                     <p className="card-text">
@@ -67,9 +59,9 @@ const QuickView = () => {
             </div>
             {/* cards */}
             {/* cards */}
-            <div className="card"  style={{"textAlign":"center","padding":"10px"}}>
+            <div className="card"  style={{"textAlign":"center"}}>
                 <p>The Magic Balloons Red Glasses</p>
-                <span style={{"marginBottom":"10px","fontSize":"20px","fontWeight":"bold"}}>₹600.00</span>
+                <span style={{"fontSize":"20px","fontWeight":"bold","marginTop":"-20px"}}>₹600.00</span>
                 <img className="card-img-top" src={helium} alt="Card image cap"/>
                 <div className="card-body">
                     <p className="card-text">
@@ -87,9 +79,9 @@ const QuickView = () => {
             </div>
             {/* cards */}
             {/* cards */}
-            <div className="card"  style={{"textAlign":"center","padding":"10px"}}>
+            <div className="card"  style={{"textAlign":"center"}}>
                 <p>The Magic Balloons Red Glasses  </p>
-                <span style={{"marginBottom":"10px","fontSize":"20px","fontWeight":"bold"}}>₹600.00</span>
+                <span style={{"fontSize":"20px","fontWeight":"bold","marginTop":"-20px"}}>₹600.00</span>
                 <img className="card-img-top" src={infltable} alt="Card image cap"/>
                 <div className="card-body">
                     <p className="card-text">
@@ -107,9 +99,9 @@ const QuickView = () => {
             </div>
             {/* cards */}
             {/* cards */}
-            <div className="card"  style={{"textAlign":"center","padding":"10px"}}>
+            <div className="card"  style={{"textAlign":"center"}}>
                 <p>The Magic Balloons Red Glasses </p>
-                <span style={{"marginBottom":"10px","fontSize":"20px","fontWeight":"bold"}}>₹600.00</span>
+                <span style={{"fontSize":"20px","fontWeight":"bold","marginTop":"-20px"}}>₹600.00</span>
                 <img className="card-img-top" src={kids} alt="Card image cap"/>
                 <div className="card-body">
                     <p className="card-text">
@@ -127,9 +119,9 @@ const QuickView = () => {
             </div>
             {/* cards */}
             {/* cards */}
-            <div className="card"  style={{"textAlign":"center","padding":"10px"}}>
+            <div className="card"  style={{"textAlign":"center"}}>
                 <p>The Magic Balloons Red Glasses </p>
-                <span style={{"marginBottom":"10px","fontSize":"20px","fontWeight":"bold"}}>₹600.00</span>
+                <span style={{"fontSize":"20px","fontWeight":"bold","marginTop":"-20px"}}>₹600.00</span>
                 <img className="card-img-top" src={kids1} alt="Card image cap"/>
                 <div className="card-body">
                     <p className="card-text">
@@ -147,9 +139,9 @@ const QuickView = () => {
             </div>
             {/* cards */}
             {/* cards */}
-            <div className="card"  style={{"textAlign":"center","padding":"10px"}}>
+            <div className="card"  style={{"textAlign":"center"}}>
                 <p>The Magic Balloons Red Glasses </p>
-                <span style={{"marginBottom":"10px","fontSize":"20px","fontWeight":"bold"}}>₹600.00</span>
+                <span style={{"fontSize":"20px","fontWeight":"bold","marginTop":"-20px"}}>₹600.00</span>
                 <img className="card-img-top" src={luxury} alt="Card image cap"/>
                 <div className="card-body">
                     <p className="card-text">
@@ -167,9 +159,9 @@ const QuickView = () => {
             </div>
             {/* cards */}
             {/* cards */}
-            <div className="card"  style={{"textAlign":"center","padding":"10px"}}>
+            <div className="card"  style={{"textAlign":"center"}}>
                 <p>The Magic Balloons Red Glasses </p>
-                <span style={{"marginBottom":"10px","fontSize":"20px","fontWeight":"bold"}}>₹600.00</span>
+                <span style={{"fontSize":"20px","fontWeight":"bold","marginTop":"-20px"}}>₹600.00</span>
                 <img className="card-img-top" src={other1} alt="Card image cap"/>
                 <div className="card-body">
                     <p className="card-text">
@@ -186,7 +178,88 @@ const QuickView = () => {
 
             </div>
             {/* cards */}
+
+            {/* cards */}
+            <div className="card"  style={{"textAlign":"center"}}>
+                <p>The Magic Balloons Red Glasses </p>
+                <span style={{"fontSize":"20px","fontWeight":"bold","marginTop":"-20px"}}>₹600.00</span>
+                <img className="card-img-top" src={bouquet} alt="Card image cap"/>
+                <div className="card-body">
+                    <p className="card-text">
+                            <a className="nav-link text-white" href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">
+                                <button type="button" class="btn ">Buy Now </button>
+                            </a>    
+                    </p>
+                    {/* <p className="card-text">
+                        <button type="button" class="btn btn-success">
+                                <AiOutlineShoppingCart />
+                        </button>
+                    </p> */}
+                </div>
+
+            </div>
+            {/* cards */}
+            {/* cards */}
+            <div className="card"  style={{"textAlign":"center"}}>
+                <p>The Magic Balloons Red Glasses </p>
+                <span style={{"fontSize":"20px","fontWeight":"bold","marginTop":"-20px"}}>₹600.00</span>
+                <img className="card-img-top" src={event1} alt="Card image cap"/>
+                <div className="card-body">
+                    <p className="card-text">
+                            <a className="nav-link text-white" href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">
+                                <button type="button" class="btn ">Buy Now </button>
+                            </a>    
+                    </p>
+                    {/* <p className="card-text">
+                        <button type="button" class="btn btn-success">
+                                <AiOutlineShoppingCart />
+                        </button>
+                    </p> */}
+                </div>
+
+            </div>
+            {/* cards */}
         
+             {/* cards */}
+            <div className="card"  style={{"textAlign":"center"}}>
+                <p>The Magic Balloons Red Glasses</p>
+                <span style={{"fontSize":"20px","fontWeight":"bold","marginTop":"-20px"}}>₹600.00</span>
+                <img className="card-img-top" src={helium} alt="Card image cap"/>
+                <div className="card-body">
+                    <p className="card-text">
+                            <a className="nav-link text-white" href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">
+                                <button type="button" class="btn ">Buy Now </button>
+                            </a>    
+                    </p>
+                    {/* <p className="card-text">
+                        <button type="button" class="btn btn-success">
+                                <AiOutlineShoppingCart />
+                        </button>
+                    </p> */}
+                </div>
+
+            </div>
+            {/* cards */}
+            {/* cards */}
+            <div className="card"  style={{"textAlign":"center"}}>
+                <p>The Magic Balloons Red Glasses  </p>
+                <span style={{"fontSize":"20px","fontWeight":"bold","marginTop":"-20px"}}>₹600.00</span>
+                <img className="card-img-top" src={infltable} alt="Card image cap"/>
+                <div className="card-body">
+                    <p className="card-text">
+                            <a className="nav-link text-white" href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">
+                                <button type="button" class="btn ">Buy Now </button>
+                            </a>    
+                    </p>
+                    {/* <p className="card-text">
+                        <button type="button" class="btn btn-success">
+                                <AiOutlineShoppingCart />
+                        </button>
+                    </p> */}
+                </div>
+
+            </div>
+            {/* cards */}
             
             
 

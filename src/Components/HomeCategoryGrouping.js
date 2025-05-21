@@ -13,6 +13,10 @@ const HomeCategoryGrouping = () => {
     <div className='category'>
         {/* <h1 className='text-center bg-secodary'>Choose From Categories</h1> */}
         {/* <div className='container'> */}
+                <div className='item-para'>
+                    <h2 className='text-center'>celebrate your day with our special designed balloons</h2>
+                    
+                </div>
             <div className='container category-items'>
                 
                 {/* item */}
@@ -30,13 +34,9 @@ const HomeCategoryGrouping = () => {
                 {/* item */}
                 <div className='item'>
                     <h2 className='text-center'>Sky balloon</h2>
-                    <img src={skyballoon} style={{width:"100%",backgroundColor:"blue",borderRadius:"50px"}}/>
+                    <img src={skyballoon} style={{width:"100%",backgroundColor:"blue"}}/>
                 </div>
                 {/* item para*/}
-                <div className='item-para'>
-                    <h2 className='text-center'>celebrate your day with our special designed balloons</h2>
-                    
-                </div>
                 {/* item para*/}
                 {/* item */}
                 <div className='item'>
@@ -53,7 +53,7 @@ const HomeCategoryGrouping = () => {
                 {/* item */}
                 <div className='item' >
                     <h2 className='text-center'>Printed Balloon</h2>
-                    <img src={printedballoon}  style={{height:"90%"}}/>
+                    <img src={printedballoon}  />
                 </div>
                 {/* item */}
             </div>

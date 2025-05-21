@@ -66,5 +66,45 @@ nav{
     background-color: #e59e9e;
     /* color: #3aff3e; */
   }
+.navbar-brand img{
+
+  width: 150px
+}
 
   
+/* Mobile view adjustment */
+@media (max-width: 900px) {
+  .navbar-brand img {
+    margin: 0 !important;
+    width: 100px;
+  }
+}
+
+
+
+/* Scrollable dropdown for mobile */
+@media (max-width: 900px) {
+  .dropdown-menu {
+    max-height: 250px; /* Adjust height as needed */
+    overflow-y: auto;
+  }
+
+  .dropdown-item {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  /* Optional: nicer scrollbar */
+  .dropdown-menu::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 10px;
+  }
+
+  .dropdown-menu::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}

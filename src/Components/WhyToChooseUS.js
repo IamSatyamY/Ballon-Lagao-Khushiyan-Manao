@@ -10,26 +10,26 @@ const WhyToChooseUS = () => {
   return (
     <div className='whytochooseus'>
         
-        <h1>WhyToChooseUS</h1>
+        <h1>Why To Choose US</h1>
         <div className='whytochooseus-options'>
             <div className='option'>
-                <TbTruckDelivery />
+                <TbTruckDelivery  className='icons'/>
                 <p>24 X 7- DELIVERY</p>
             </div>
             <div className='option'>
-                <FaRegCheckCircle />
+                <FaRegCheckCircle  className='icons'/>
                 <p>PURE- HELIUM</p>
             </div>
             <div className='option'>
-                <FaUserPlus />
+                <FaUserPlus  className='icons'/>
                 <p>EXPERT TECHNICIANS</p>
             </div>
             <div className='option'>
-                <BiWorld />
+                <BiWorld  className='icons'/>
                 <p>PAN INDIA</p>
             </div>
             <div className='option'>
-                <MdLabelImportantOutline/>
+                <MdLabelImportantOutline className='icons'/>
                 <p>HIGH QUALITY PRODUCTS</p>
             </div>
         </div>

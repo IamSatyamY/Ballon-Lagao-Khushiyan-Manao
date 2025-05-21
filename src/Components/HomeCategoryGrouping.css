@@ -1,5 +1,8 @@
 .category{
     /* border:2px solid red; */
+    /* background-color: rgba(252, 229, 249, 0.818); */
+    margin-top: 20px;
+    border-radius: 90px 0 ; ;
 }
 .category-items{
     /* border:3px solid greenyellow; */
@@ -14,14 +17,21 @@
 }
 .category-items .item{
     /* border:3px solid grey; */
-    margin: 50px;
+    margin: 30px;
     
-    border-radius: 30px;
-    background-color: rgb(248, 246, 246);
+    /* border-radius: 30px; */
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
     width:300px;
-    height:300px;
+    height:200px;
     transition: ease 0.5s;
+    border:1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 .category-items .item:hover{
@@ -29,14 +39,18 @@
     box-shadow: 0px 0px 3px 2px rgb(180, 170, 170);
 }
 .category-items .item h2{
-    color:rgb(247, 227, 55);
-    text-shadow: 1px 3px rgb(211, 169, 169);
-    font-family: cursive;
+    color:rgb(255, 255, 255);
+    background-color: #6c015d;
+    width:100%;
+    padding: 5px;
+    font-size: 20px;
+    font-family: "roboto";
 }
 .category-items .item img{
-    width: 100%;
+    height: 80%;
+    
 }
-.category-items .item-para{
+.category .item-para{
     /* position: absolute;
     z-index: 100; */
     padding: 1px;
@@ -46,19 +60,21 @@
     transform:translate(-50%,-50%); */
     /* border:2px solid red; */
     width:100%;
-    height:200px;
+    height:80px;
     /* border-radius: 50%; */
-    background-color: rgba(61, 206, 170, 0.555);
+    background: url("../assets/giphy.gif");
+    background-position: center;
     /* outline: 10px solid white; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-family: cursive;
-    color:rgb(180, 58, 133);
-    text-shadow: 1px 3px pink;
+    font-family: roboto;
+    color:rgb(254, 254, 254);
+    text-shadow: 2px 2px 2px black;
+   
     /* font-size: 50px; */
-    border-radius: 90px 0 ;
+    /* border-radius: 90px 0 ; */
     margin:  0 auto;
     grid-column:1/4;
     /* grid-row: 2; */
@@ -71,19 +87,23 @@
 
 @media screen and (max-width: 768px) {
   .category-items .item {
-    width: 90%;
-    margin: 20px auto;
+    width: 30%;
+    margin: 10px auto;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .category-items {
     justify-content: center;
+    align-items: center;
   }
 
   .category-items .item-para {
-    font-size: 24px;
-    border-radius: 40px;
+    font-size: 50px;
+    /* border-radius: 10px; */
     height: auto;
-    padding: 20px;
+    padding: 10px;
+    margin-top: 20px;
   }
 
   .category-items .item-para h2 {

@@ -28,7 +28,7 @@ function Header1() {
                 </li>
                 </ul>
 
-                <div className="d-flex social-media" style={{ fontSize: "20px" }}>
+                <div className="d-flex social-media" style={{ fontSize: "16px" }}>
                     <Link className="nav-link text-white" to="/admin" target="_self" rel="noopener noreferrer">
                         <RiAdminLine />
                     </Link>&nbsp;&nbsp;&nbsp;

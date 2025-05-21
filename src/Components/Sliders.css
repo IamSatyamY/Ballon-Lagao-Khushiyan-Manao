@@ -13,8 +13,17 @@
   .carousel-inner{
     margin-top: 20px;
   }
+  @media (max-width: 908px) {
+  .carousel-inner{
+    margin-top: 35px;
+  }
+}
+
  .carousel-inner img{
    width: 100%;
+   /* margin-top: 50px; */
+   /* height: 400px; */
+   align-items: center;
  }
 
  /* coloring arrows */

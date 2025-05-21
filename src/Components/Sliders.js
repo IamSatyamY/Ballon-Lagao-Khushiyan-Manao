@@ -1,28 +1,20 @@
 import React from 'react'
-import s1   from '../assets/homepagesliders/sliders (6).jpg';
-import s2   from '../assets/homepagesliders/sliders (22).jpg';
-import s3   from '../assets/homepagesliders/sliders (9).jpg';
-import s4   from '../assets/homepagesliders/sliders (4).jpg'
-import s5   from '../assets/homepagesliders/sliders (5).jpg';
-import s6   from '../assets/homepagesliders/sliders (3).jpg';
-import s7   from '../assets/homepagesliders/sliders (21).jpg';
-import s8   from '../assets/homepagesliders/sliders (15).jpg';
+import s1   from '../assets/homepagesliders/slidervid (1).mp4';
+import s2   from '../assets/homepagesliders/slidervid (2).mp4';
+import s3   from '../assets/homepagesliders/slider (3).jpg';
+import s4   from '../assets/homepagesliders/slider (4).jpg'
+import s5   from '../assets/homepagesliders/slider (5).jpg';
+import s6   from '../assets/homepagesliders/slider (6).jpg';
+import s7   from '../assets/homepagesliders/slider (7).jpg';
+import s8   from '../assets/homepagesliders/slider (5).jpg';
 
 import './Sliders.css';
 function Sliders() {
   return (
     <>
-        <div id="carouselExampleAutoplaying" className="carousel slide sliders-img-containe" data-bs-ride="carousel" data-bs-interval="2000">
+        <div id="carouselExampleAutoplaying" className="carousel slide sliders-img-containe"  data-bs-interval="2000">
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={s1} className="d-block " alt="..."   />
-                </div>
-
-                <div className="carousel-item">
-                    <img src={s2} className="d-block " alt="..."   />
-                </div>
-
-                <div className="carousel-item">
                     <img src={s3} className="d-block " alt="..."   />
                 </div>
 
@@ -41,9 +33,7 @@ function Sliders() {
                     <img src={s7} className="d-block " alt="..."   />
                 </div>
 
-                <div className="carousel-item">
-                    <img src={s8} className="d-block " alt="..."   />
-                </div>
+                
 
                 
 
