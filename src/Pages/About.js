@@ -31,7 +31,7 @@ const About = () => {
           <p className='name'>
             Managing Director
           </p>
-          <img src={mdimg}></img>
+          <img src={mdimg} alt=""/>
           <div className='social'>
             <a className="nav-link mx-3 " href="https://in.linkedin.com/in/abrar-ahmed-2397b232a?trk=public_profile_samename-profile" target="_self" rel="noopener noreferrer">
                 <FaLinkedin  />

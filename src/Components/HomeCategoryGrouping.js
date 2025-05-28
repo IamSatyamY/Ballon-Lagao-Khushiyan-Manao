@@ -34,7 +34,7 @@ const HomeCategoryGrouping = () => {
                 {/* item */}
                 <div className='item'>
                     <h2 className='text-center'>Sky balloon</h2>
-                    <img src={skyballoon} style={{width:"100%",backgroundColor:"blue"}}/>
+                    <img src={skyballoon} />
                 </div>
                 {/* item para*/}
                 {/* item para*/}

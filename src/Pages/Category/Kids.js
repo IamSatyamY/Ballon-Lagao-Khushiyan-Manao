@@ -1,5 +1,26 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
+import "./Common_Category.css"
+
+import jb1 from "./assets/Kids/Jumping Bouncy/kp (1).jpg"
+import jb2 from "./assets/Kids/Jumping Bouncy/kp (3).jpg"
+import jb3 from "./assets/Kids/Jumping Bouncy/kp (6).jpg"
+
+import tramp1 from "./assets/Kids/Trampoline/tram (1).jpg"
+import tramp2 from "./assets/Kids/Trampoline/tram (4).jpg"
+import tramp3 from "./assets/Kids/Trampoline/tram (3).jpg"
+
+import tt1 from "./assets/Kids/Toy trains/tt (1).jpg"
+import tt2 from "./assets/Kids/Toy trains/tt (2).jpg"
+import tt3 from "./assets/Kids/Toy trains/tt (3).jpg"
+
+import isp1 from "./assets/Kids/Inflatable Swimimming pool/isp (3).jpg"
+import isp2 from "./assets/Kids/Inflatable Swimimming pool/isp (5).jpg"
+import isp3 from "./assets/Kids/Inflatable Swimimming pool/isp (6).jpg"
+
+import ladder1 from "./assets/Kids/ladder slide/ls (1).jpg"
+import ladder2 from "./assets/Kids/ladder slide/ls (2).jpg"
+import ladder3 from "./assets/Kids/ladder slide/ls (4).jpg"
 
 const Kids = () => {
   const location = useLocation();
@@ -18,62 +39,124 @@ const Kids = () => {
 
 
   return (
-    <div style={{ padding: "30px" }}>
+    <div className='category-common-div'  style={{ padding: "30px" }}>
    
       
       <br/>
       <h1>Kids Play</h1>
       <section id="jumping_bouncy">
         <h2>Jumping Bouncy</h2>
-        <p>High-quality latex balloons available in multiple colors and sizes.</p>
-        <p>loremLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        {/* Render 9 inch print balloon */}
+       <div className='CommonImgContainerForCategoryItemsByContact' >
+            <div className='img-div'>
+                <img src={jb1} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={jb2} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={jb3} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+        </div>
       </section>
       <hr />
       <section id="trampoline">
         <h2>Trampoline</h2>
-        <p>Party hats, poppers, streamers, and all things party!</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        {/* Render 12 inch print balloon */}
+        <div className='CommonImgContainerForCategoryItemsByContact' >
+            <div className='img-div'>
+                <img src={tramp1} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={tramp2} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            {/* <div className='img-div'>
+                <img src={tramp3} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div> */}
+        </div>
       </section>
       <hr />
       <section id="toy_mini">
         <h2>Toy Mini Train</h2>
-        <p>Foil balloons for birthdays, anniversaries, and special events.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        {/* Render Crom print Balloon */}
+        <div className='CommonImgContainerForCategoryItemsByContact' >
+            <div className='img-div'>
+                <img src={tt1} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={tt2} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={tt3} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+        </div>
       </section>
       <hr/>
       <section id="inflatable_swimming">
         <h2>Inflatabale Swimming Pool</h2>
-        <p>Foil balloons for birthdays, anniversaries, and special events.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        {/* Render Crom print Balloon */}
+        <div className='CommonImgContainerForCategoryItemsByContact' >
+            <div className='img-div'>
+                <img src={isp1} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={isp2} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={isp3} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+        </div>
       </section>
       <hr/>
       <section id="ladder_slide">
         <h2>Ladder Slide</h2>
-        <p>Foil balloons for birthdays, anniversaries, and special events.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        {/* Render Crom print Balloon */}
+        <div className='CommonImgContainerForCategoryItemsByContact' >
+            <div className='img-div'>
+                <img src={ladder1} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={ladder2} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={ladder3} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+        </div>
       </section>
       <hr/>
       <section id="play_items">
         <h2>Play Items</h2>
-        <p>Foil balloons for birthdays, anniversaries, and special events.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        {/* Render Crom print Balloon */}
+        <div className='CommonImgContainerForCategoryItemsByContact' >
+            <div className='img-div'>
+                <img src={tramp1} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={tramp2} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            {/* <div className='img-div'>
+                <img src={tramp3} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div> */}
+        </div>
       </section>
       <hr/>
       
     </div>
 )
 }
+
+
 
 export default Kids

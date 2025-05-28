@@ -1,89 +1,96 @@
-.category{
-    /* border:2px solid red; */
-    /* background-color: rgba(252, 229, 249, 0.818); */
-    margin-top: 20px;
-    border-radius: 90px 0 ; ;
+:root {
+  --category-bg: #ffffff;
+  --item-border: 1px solid rgb(218, 218, 218);
+  --item-radius: 10px;
+  --item-hover-shadow: 0px 0px 3px 2px rgb(180, 170, 170);
+  --header-bg: rgb(229, 209, 209);
+  --header-text-color: rgb(57, 32, 32);
+  --text-shadow: 2px 2px 2px rgb(229, 209, 209);
+  --font-primary: "poppins", sans-serif;
+  --item-width: 300px;
+  --item-height: 200px;
+  --back-color:#fceae0;
 }
-.category-items{
-    /* border:3px solid greenyellow; */
-    display: flex;
-    /* grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto auto; */
-    flex-wrap:wrap;
-    justify-content: space-evenly;
-    position: relative;
 
+.category {
+  /* border: 2px solid red; */
+  /* background-color: rgba(252, 229, 249, 0.818); */
+  margin-top: 20px;
+  border-radius: 90px 0;
+  background-color: var(--back-color);
+}
+
+.category-items {
+  /* border: 3px solid greenyellow; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.category-items .item {
+  /* border: 3px solid grey; */
+  margin: 30px;
+  background-color: var(--category-bg);
+  overflow: hidden;
+  width: var(--item-width);
+  height: var(--item-height);
+  transition: ease 0.5s;
+  border: var(--item-border);
+  border-radius: var(--item-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-items .item:hover {
+  transform: scale(1.05);
+  box-shadow: var(--item-hover-shadow);
+}
+
+.category-items .item h2 {
+  color: var(--header-text-color);
+  background-color: var(--header-bg);
+  width: 100%;
+  padding: 5px;
+  font-family: var(--font-primary);
 
 }
-.category-items .item{
-    /* border:3px solid grey; */
-    margin: 30px;
-    
-    /* border-radius: 30px; */
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    width:300px;
-    height:200px;
-    transition: ease 0.5s;
-    border:1px solid rgb(218, 218, 218);
-    border-radius: 10px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+.category-items .item img {
+  height: 80%;
 }
-.category-items .item:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 0px 3px 2px rgb(180, 170, 170);
+
+.category .item-para {
+  padding: 1px;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  background: rgb(226, 223, 223);
+  box-shadow: 0 2px 10px grey;
+  background-position: center;
+  /* color:brown; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--header-text-color);
+  /* text-shadow: var(--text-shadow); */
+  margin: 0 auto;
+  grid-column: 1 / 4;
 }
-.category-items .item h2{
-    color:rgb(255, 255, 255);
-    background-color: #6c015d;
-    width:100%;
-    padding: 5px;
-    font-size: 20px;
-    font-family: "roboto";
-}
-.category-items .item img{
-    height: 80%;
-    
-}
-.category .item-para{
-    /* position: absolute;
-    z-index: 100; */
-    padding: 1px;
-    overflow: hidden;
-    /* top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%); */
-    /* border:2px solid red; */
-    width:100%;
-    height:80px;
-    /* border-radius: 50%; */
-    background: url("../assets/giphy.gif");
-    background-position: center;
-    /* outline: 10px solid white; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: roboto;
-    color:rgb(254, 254, 254);
-    text-shadow: 2px 2px 2px black;
-   
-    /* font-size: 50px; */
-    /* border-radius: 90px 0 ; */
-    margin:  0 auto;
-    grid-column:1/4;
-    /* grid-row: 2; */
-}
-.category-items .item-para h2{
-  font-size: 40px;
+
+.category-items .item h2 {
+  font-size: 18px;
+  color: black;
+  font-weight: bolder;
   word-wrap: break-word;
+  font-weight:lighter;
+  /* background-color: red; */
 }
-
 
 @media screen and (max-width: 768px) {
   .category-items .item {
@@ -99,8 +106,6 @@
   }
 
   .category-items .item-para {
-    font-size: 50px;
-    /* border-radius: 10px; */
     height: auto;
     padding: 10px;
     margin-top: 20px;
@@ -109,5 +114,12 @@
   .category-items .item-para h2 {
     font-size: 28px;
     text-align: center;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .category .item-para h2 {
+    font-size: 20px ;
   }
 }

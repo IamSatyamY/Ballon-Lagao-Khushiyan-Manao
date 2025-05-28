@@ -12,13 +12,17 @@
 .gallery h1 {
   text-align: center;
   font-family: sans-serif;
-  background-color: var(--gallery-header-bg);
-  border-bottom: 5px solid var(--gallery-header-border);
-  border-radius: 20px;
+  /* background-color: rgb(226, 223, 223); */
+  /* border-bottom: 5px solid var(--gallery-header-border); */
+   /* box-shadow: 0 2px 10px grey; */
+  /* border-radius: 20px; */
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 35px;
   padding: 15px;
   margin-bottom: -20px;
   margin-top: 20px;
-  color: var(--gallery-header-text);
+  color:  rgb(57, 32, 32);
   text-shadow: 0 2px 10px var(--gallery-header-shadow);
   z-index: 10;
 }
@@ -30,6 +34,7 @@
   gap: 20px;
   padding: 20px;
   margin-top: 20px;
+
   border-radius: 20px;
   scroll-behavior: smooth;
 
@@ -54,4 +59,10 @@
 
 .gallery .video iframe:hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .gallery h1 {
+    font-size: 20px;
+  }
 }

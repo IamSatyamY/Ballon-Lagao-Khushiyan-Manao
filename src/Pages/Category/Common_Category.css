@@ -1,0 +1,52 @@
+:root {
+  /* --main-bg-color: ,uhy #fceae0; */
+  --highlight-color: brown;
+  --font-primary: "Roboto", sans-serif;
+  --heading-anim-color-1: #fffacf;
+  --heading-anim-color-2: #f1c0ed;
+  --heading-anim-color-3: #a9f0fa;
+  --h2-font-size: 20px;
+}
+
+.category-common-div {
+  background-color: var(--main-bg-color);
+}
+
+.category-common-div h1 {
+  animation: bgColorChange 5s infinite alternate;
+  text-align: center;
+  color: var(--highlight-color);
+  font-family: var(--font-primary);
+}
+
+@keyframes bgColorChange {
+  0% {
+    background-color: var(--heading-anim-color-1);
+  }
+  50% {
+    background-color: var(--heading-anim-color-2);
+  }
+  100% {
+    background-color: var(--heading-anim-color-3);
+  }
+}
+
+.category-common-div h2 {
+  font-size: var(--h2-font-size);
+  text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+.category-common-div section {
+  /* No specific styles applied here yet */
+}
+
+.category-common-div p {
+  text-align: center;
+  font-style: italic;
+}
+
+.category-common-div p b {
+  /* You can uncomment and define color here if needed */
+  /* color: violet; */
+}

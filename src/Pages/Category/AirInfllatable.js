@@ -1,5 +1,17 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
+import "./Common_Category.css"
+
+import ad1 from "./assets/air inflatable balloon/air dancer (1).jpeg"
+import ad2 from "./assets/air inflatable balloon/air dancer (2).jpeg"
+import ad3 from "./assets/air inflatable balloon/air dancer (3).jpeg"
+
+import ci1 from "./assets/air inflatable balloon/customized inflatabale(1).jpg"
+import ci2 from "./assets/air inflatable balloon/customized inflatabale(2).png"
+
+import ch1 from "./assets/air inflatable balloon/inflatabale character (1).jpeg"
+import ch2 from "./assets/air inflatable balloon/inflatabale character (3).jpeg"
+import ch3 from "./assets/air inflatable balloon/inflatabale character (4).jpeg"
 
 const AirInfllatable = () => {
  const location = useLocation();
@@ -17,33 +29,59 @@ const AirInfllatable = () => {
   }, [location]);
 
   return (
-    <div style={{ padding: "30px" }}>
+    <div className='category-common-div'  style={{ padding: "30px" }}>
    
       
       <br/>
       <h1>Air Inflatable Balloon</h1>
       <section id="air_dancer">
         <h2>Air Dancer</h2>
-        <p>High-quality latex balloons available in multiple colors and sizes.</p>
-        <p>loremLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        {/* Render 9 inch print balloon */}
+        <div className='CommonImgContainerForCategoryItemsByContact' >
+            <div className='img-div'>
+                <img src={ad1} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={ad2} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={ad3} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+        </div>
       </section>
       <hr />
       <section id="customize_inflatable">
         <h2>Customize Inflatable</h2>
-        <p>Party hats, poppers, streamers, and all things party!</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        {/* Render 12 inch print balloon */}
+        <div className='CommonImgContainerForCategoryItemsByContact' >
+            <div className='img-div'>
+                <img src={ci1} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={ci2} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+        </div>
       </section>
       <hr />
       <section id="characters">
         <h2>Characters</h2>
-        <p>Foil balloons for birthdays, anniversaries, and special events.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        {/* Render Crom print Balloon */}
+        <div className='CommonImgContainerForCategoryItemsByContact' >
+            <div className='img-div'>
+                <img src={ch1} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={ch2} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+            <div className='img-div'>
+                <img src={ch3} />
+                <a className='btn btn-secondary btn-sm' href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">Enquiry Now</a>
+            </div>
+        </div>
       </section>
       <hr/>
       

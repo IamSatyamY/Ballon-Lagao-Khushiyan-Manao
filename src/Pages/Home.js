@@ -16,6 +16,7 @@ const Home = () => {
       <Ourgallery/>
       <Slidevideos/>
       <Reviews/>
+      
       <WhyToChooseUS/>
     </div>
   )

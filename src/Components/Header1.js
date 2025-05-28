@@ -16,12 +16,12 @@ function Header1() {
             <div className="container-fluid d-flex justify-content-between align-items-center">
 
                 <ul className="navbar-nav mb-0" style={{ fontSize: "15px" }}>
-                <li className="nav-item">
+                <li className="nav-item" style={{borderBottom:"none"}}>
                     <a className="nav-link text-white" href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">
                     <FaWhatsapp className="text-success fw-bold" style={{ fontSize: "20px" }}/> +917666325325
                     </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" style={{borderBottom:"none"}}>
                     <a className="nav-link text-white" href="mailto:support@balloonlagao.com">
                     <CiMail style={{ fontSize: "20px" }}/> support@balloonlagao.com
                     </a>

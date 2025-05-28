@@ -10,7 +10,7 @@ const WhyToChooseUS = () => {
   return (
     <div className='whytochooseus'>
         
-        <h1>Why To Choose US</h1>
+        <h1 style={{marginBottom:"-20px"}}>Why To Choose US</h1>
         <div className='whytochooseus-options'>
             <div className='option'>
                 <TbTruckDelivery  className='icons'/>

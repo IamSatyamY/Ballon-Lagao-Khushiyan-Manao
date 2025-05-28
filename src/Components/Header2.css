@@ -46,24 +46,26 @@ nav{
 /* category elements */
 .dropdown-menu li{
     font-size: 16px;
-    background-color: rgb(111, 111, 164);
+    background-color: rgb(183, 180, 183);
     font-weight: bold;
     /* border: 2px solid red; */
 }
 
 .dropdown-menu{
-  background-color: #ffffff;
+  background-color: rgb(183, 180, 183);
 }
 
   /* Optional: Change dropdown item text color */
   .dropdown-item {
     color: #f8f8f8; /* Black text */
     font-weight: bold;
+    text-align: center;
   }
   
   /* Optional: Change hover background and text color */
   .dropdown-item:hover {
-    background-color: #e59e9e;
+    background-color: #f9cece;
+    color: #b06a6a;
     /* color: #3aff3e; */
   }
 .navbar-brand img{
@@ -71,6 +73,10 @@ nav{
   width: 150px
 }
 
+
+.nav-item Link{
+  /* border:2px solid red */
+}
   
 /* Mobile view adjustment */
 @media (max-width: 900px) {
@@ -107,4 +113,17 @@ nav{
   .dropdown-menu::-webkit-scrollbar-track {
     background-color: transparent;
   }
+
+
+  .nav-item {
+  /* border:2px solid red; */
+    border-bottom: 1px solid rgb(202, 202, 202);
+    text-align: center;
+  }
+   .nav-item Link{
+    color:blue
+   }
+
 }
+
+

@@ -1,79 +1,89 @@
-:root {
-  --bg-light: #ffffff;
-  --card-border: rgb(225, 225, 225);
-  --hover-border: grey;
-  --btn-primary-bg: rgb(175, 72, 8);
-  --btn-hover-bg: rgb(243, 137, 17);
-  --btn-hover-text: rgb(24, 24, 24);
-  --header-bg: rgb(175, 72, 8);
-  --header-text: rgb(236, 236, 235);
-  --header-shadow: grey;
-  --card-text: white;
+.quickview-div{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.quickview h1{
+  /* border: 2px solid rgb(18, 179, 144); */
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 35px;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color:  rgb(57, 32, 32);
+  text-shadow: 0 2px 10px var(--gallery-header-shadow);
+  z-index: 10;
+  
 }
 
-.home-products {
-  background-color: var(--bg-light);
-  padding: 20px;
-}
-
-.home-products .card {
-  height: 300px;
+.quickview-item{
+  border: 1px solid rgb(194, 194, 194);
+  padding: 5px;
   width: 200px;
-  margin: 0px;
-  transition: all 0.5s ease;
-  border: 0.1px solid var(--card-border);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  transition: ease 0.5s;
 }
 
-@media (max-width: 768px) {
-  .home-products .card {
+.quickview-item:hover{
+  transform: scale(1.05);
+}
+
+.quickview-item-img{
+  /* border: 2px solid red; */
+  width: 100%;
+  /* height: 200px; */
+  
+}
+
+.quickview-item-name{
+  /* border: 2px solid green; */
+
+  
+}
+
+.quickview-item-description{
+  /* border: 2px solid blue; */
+  
+}
+
+.quickview-item-button-div{
+  /* border: 2px solid pink; */
+  
+}
+
+.quickview-item-button-div a{
+  border: 2px solid rgb(255, 128, 24);
+  width: 100%;
+  color:orange;
+  background-color: #fff;
+  border-radius: 50px;
+  /* display: none; */
+}
+.quickview-item-button-div a:hover{
+  color:white;
+  background-color: orange;
+  border:2px solid orange;
+}
+
+@media (max-width: 900px) {
+  .quickview-item{
     width: 130px;
+  }
+
+  .quickview h1{
+    font-size: 20px;
   }
 }
 
-.home-products .card img {
-  height: 48%;
-  width: 100%;
-  margin: 0 auto;
-  align-items: center;
-}
 
-.home-products .card:hover {
-  border: 2px solid var(--hover-border);
-}
 
-.home-products .products {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px;
-  justify-content: space-around;
-  gap: 10px;
-}
 
-.home-products .products button {
-  color: white;
-  background-color: var(--btn-primary-bg);
-}
 
-.home-products .products button:hover {
-  background-color: var(--btn-hover-bg);
-  color: var(--btn-hover-text);
-}
-
-.home-products h1 {
-  text-align: center;
-  background-color: var(--header-bg);
-  padding: 15px;
-  color: var(--header-text);
-  text-shadow: 0 2px var(--header-shadow);
-  font-family: sans-serif;
-  box-shadow: 3px 5px 3px var(--header-shadow);
-  border-radius: 10px;
-}
-
-.card .card-body {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: var(--card-text);
-  font-family: sans-serif;
-}
