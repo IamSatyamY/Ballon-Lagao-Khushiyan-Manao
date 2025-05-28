@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
 import "./Common_Category.css"
-import sky1 from './assets/Sky Balloon/sky (10).png'
-import sky2 from './assets/Sky Balloon/sky (12).png'
-import sky3 from './assets/Sky Balloon/sky (11).png'
+import sky1 from './assets/Sky Balloon/sky (5).png'
+import sky2 from './assets/Sky Balloon/sky.jpg'
+import sky3 from './assets/Sky Balloon/sky (4).jpg'
 
 import square1 from './assets/Sky Balloon/square shape.jpeg'
 import square2 from './assets/Sky Balloon/square shape2.jpg'
