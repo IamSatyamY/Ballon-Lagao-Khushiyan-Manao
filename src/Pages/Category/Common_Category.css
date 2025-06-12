@@ -17,6 +17,7 @@
   text-align: center;
   color: var(--highlight-color);
   font-family: var(--font-primary);
+
 }
 
 @keyframes bgColorChange {
@@ -49,4 +50,10 @@
 .category-common-div p b {
   /* You can uncomment and define color here if needed */
   /* color: violet; */
+}
+
+@media (max-width:900px){
+  .category-common-div h1 {
+    margin-top: -110px;
+}
 }

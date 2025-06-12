@@ -4,11 +4,17 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 
 const Contact = () => {
   return (
     <div className='contact-div container'>
+      <Helmet>
+        <title>Contact Balloon Lagao</title>
+        <meta name='description' content=' Have questions or need a quote? Contact Balloon Lagao – India’s 
+        trusted manufacturer of custom advertising balloons and inflatables. '></meta>
+      </Helmet>
       <div className='non-map'>
           <div className='single-element'>
             <div className='logo'>

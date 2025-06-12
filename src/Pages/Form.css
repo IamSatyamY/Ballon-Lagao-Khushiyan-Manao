@@ -1,0 +1,67 @@
+.Form {
+    padding-top: 110px;
+}
+.Form form{
+    /* border:2px solid red; */
+    border-radius: 10px;
+    width:500px;
+    height: 500px;
+    position: relative;
+    top:150px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    background-color: rgb(244, 244, 247);
+    /* margin-top: 110px;; */
+}
+
+.Form form h1{
+    font-size: 28px;
+    text-align: center;
+    margin: 20px;
+}
+
+@media (max-width:900px){
+    .Form form h1{
+        font-size: 20px;
+
+    }
+}
+
+.Form form input{
+    width: 100%;
+    border: 1px solid rgb(212, 210, 210);
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.Form form .form-check{
+    /* border:2px solid red; */
+    margin: 10px;
+    font-size: 15px;
+    /* color:rgba(165, 42, 42, 0.884); */
+    /* font-weight: bold; */
+    font-family: sans-serif;
+}
+.Form form .form-check label{
+    margin-left: 10px;
+}
+
+.Form form input[type="radio"]{
+     width: initial;
+    /* border: initial; */
+    border-radius: 50%;
+    margin-top: 0;
+    padding: 10px;
+}
+
+.Form form input[type="submit"]{
+    background-color: #981f1f;
+    color:white;
+}
+
+@media (max-width:900px){
+    .Form form{
+        width: 100%;
+    }
+}

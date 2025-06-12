@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { FaStar } from "react-icons/fa";
 import "./Reviews.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 const Reviews = () => {
   useEffect(() => {
@@ -19,12 +20,12 @@ const Reviews = () => {
   }, []);
 
   return (
-    <div className='reviews mt-4'>
+    <div className='reviews container' id='reviews-link'>
       <h1 className='text-center'>Our Happy Customers</h1>
-
+      <Link to="/contactForm" className="btn btn-warning">Enquiry Form</Link>
       <div
         id="carouselExampleAutoplaying1"
-        className="carousel slide"
+        className=" reviews-all carousel slide"
         data-bs-ride="false" // Turn off Bootstrap's auto-play
       >
         <div className="carousel-inner">
@@ -36,7 +37,7 @@ const Reviews = () => {
           <div className="carousel-item">
             <div className='name'>Himanshu Vishwakarma</div>
             <div className='rating'><FaStar /><FaStar /><FaStar /><FaStar /></div>
-            <div className='text'>We hired Balloon Lagao for a small office celebration, and they brought great energy with their professional and classy balloon decorations. The branding and color coordination were spot-on.</div>
+            <div className='text'>We hired Balloon Lagao for a small office celebration, and they brought great energy with their professional and classy balloon decorations.</div>
           </div>
           <div className="carousel-item">
             <div className='name'>Satish Yadav</div>

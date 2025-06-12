@@ -13,10 +13,10 @@ const Header2 = () => {
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/" onClick={closeNavbar}>
-          <img src={logo} alt="Logo" style={{ borderRadius: '10px' }} />
+          <img src={logo} alt="balloon lagao Logo" />
         </Link>
         <button className="navbar-toggler" type="button" onClick={toggleNavbar}>
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" style={{color:'white'}}></span>
         </button>
 
         <div className={`collapse navbar-collapse header2-nav ${isOpen ? 'show' : ''}`}>
@@ -24,10 +24,10 @@ const Header2 = () => {
 
             {/* Home & About */}
             <li className="nav-item">
-              <Link className="nav-link active" to="/" onClick={closeNavbar}>Home</Link>
+              <Link id='nav-home' className="nav-link active" to="/" onClick={closeNavbar} style={{color:'teal',fontWeight:'bold'}}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about" onClick={closeNavbar}>About Us</Link>
+              <Link  id='nav-about' className="nav-link" to="/about" onClick={closeNavbar} style={{color:'teal',fontWeight:'bold'}}>AboutUs</Link>
             </li>
 
             {/* Products */}
@@ -48,12 +48,13 @@ const Header2 = () => {
                 <li><Link className="dropdown-item" to="/printed#12_inch_print" onClick={closeNavbar}>12 inch Print Balloon</Link></li>
                 <li><Link className="dropdown-item" to="/printed#crom_print" onClick={closeNavbar}>Crom Print Balloon</Link></li>
                 <li><Link className="dropdown-item" to="/printed#metalic_print" onClick={closeNavbar}>Metallic Print Balloon</Link></li>
+                <li><Link className="dropdown-item" to="/printed#36_inch_print" onClick={closeNavbar}>36 inch Print Balloon</Link></li>
               </ul>
             </li>
 
             {/* Promotional Sky Balloon */}
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown">Promotional Sky Balloon</Link>
+              <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown">Promotional Sky</Link>
               <ul className="dropdown-menu">
                 {/* {[6, 7, 8, 9, 10, 11, 12].map(size => (
                   <li key={size}>
@@ -128,7 +129,7 @@ const Header2 = () => {
 
             {/* Contact */}
             <li className="nav-item">
-              <Link className="nav-link" to="/contact" onClick={closeNavbar}>Contact Us</Link>
+              <Link  id='nav-contact' className="nav-link" to="/contact" onClick={closeNavbar} style={{color:'teal',fontWeight:'bold'}}>Contact</Link>
             </li>
           </ul>
         </div>

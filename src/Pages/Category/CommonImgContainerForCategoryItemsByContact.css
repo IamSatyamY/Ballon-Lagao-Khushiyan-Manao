@@ -24,12 +24,19 @@
     width: 300px;
     /* border: 2px solid rgb(53, 17, 151); */
 }
+.CommonImgContainerForCategoryItemsByContact .img-div a{
+    background-color: teal;
+    color: white;
+}
 
 
 @media (max-width: 900px) {
     .CommonImgContainerForCategoryItemsByContact .img-div{
-        width: 80%;
-        /* border: 2px solid rgb(53, 17, 151); */
+        width: 45%;
+        border: 1px solid rgb(131, 131, 131);
+        margin: 5px;
+        margin-bottom: 10px;
+        justify-content: space-evenly;
     }
     .CommonImgContainerForCategoryItemsByContact .img-div img{
         width: 100%;

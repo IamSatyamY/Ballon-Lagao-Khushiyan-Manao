@@ -1,125 +1,124 @@
-:root {
-  --category-bg: #ffffff;
-  --item-border: 1px solid rgb(218, 218, 218);
-  --item-radius: 10px;
-  --item-hover-shadow: 0px 0px 3px 2px rgb(180, 170, 170);
-  --header-bg: rgb(229, 209, 209);
-  --header-text-color: rgb(57, 32, 32);
-  --text-shadow: 2px 2px 2px rgb(229, 209, 209);
-  --font-primary: "poppins", sans-serif;
-  --item-width: 300px;
-  --item-height: 200px;
-  --back-color:#fceae0;
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Adds 3D perspective */
 }
 
-.category {
-  /* border: 2px solid red; */
-  /* background-color: rgba(252, 229, 249, 0.818); */
-  margin-top: 20px;
-  border-radius: 90px 0;
-  background-color: var(--back-color);
-}
-
-.category-items {
-  /* border: 3px solid greenyellow; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.flip-card-inner {
   position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-.category-items .item {
-  /* border: 3px solid grey; */
-  margin: 30px;
-  background-color: var(--category-bg);
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* flip horizontally */
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* hide back when facing front */
+  border-radius: 10px;
   overflow: hidden;
-  width: var(--item-width);
-  height: var(--item-height);
-  transition: ease 0.5s;
-  border: var(--item-border);
-  border-radius: var(--item-radius);
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-back {
+ background: #dbcea9;
+ background: linear-gradient(90deg, rgba(219, 206, 169, 1) 0%, rgba(245, 171, 208, 1) 26%, rgba(183, 134, 176, 1) 76%, rgba(112, 99, 99, 1) 100%);
+  color: white;
+  transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.category-items .item:hover {
-  transform: scale(1.05);
-  box-shadow: var(--item-hover-shadow);
-}
-
-.category-items .item h2 {
-  color: var(--header-text-color);
-  background-color: var(--header-bg);
-  width: 100%;
-  padding: 5px;
-  font-family: var(--font-primary);
-
-}
-
-.category-items .item img {
-  height: 80%;
-}
-
-.category .item-para {
-  padding: 1px;
-  overflow: hidden;
-  width: 100%;
-  height: 80px;
-  background: rgb(226, 223, 223);
-  box-shadow: 0 2px 10px grey;
-  background-position: center;
-  /* color:brown; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--font-primary);
-  text-transform: uppercase;
-  color: var(--header-text-color);
-  /* text-shadow: var(--text-shadow); */
-  margin: 0 auto;
-  grid-column: 1 / 4;
-}
-
-.category-items .item h2 {
-  font-size: 18px;
-  color: black;
-  font-weight: bolder;
-  word-wrap: break-word;
-  font-weight:lighter;
-  /* background-color: red; */
-}
-
-@media screen and (max-width: 768px) {
-  .category-items .item {
-    width: 30%;
-    margin: 10px auto;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .category-items {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .category-items .item-para {
-    height: auto;
-    padding: 10px;
-    margin-top: 20px;
-  }
-
-  .category-items .item-para h2 {
-    font-size: 28px;
-    text-align: center;
-  }
-}
 
 
-@media (max-width: 900px) {
+
+
+/* @media (max-width: 900px) {
   .category .item-para h2 {
     font-size: 20px ;
   }
-}
+} */
+ .homegrouping{
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    row-gap: 50px;
+    column-gap: 50px;
+    background-color: rgb(204, 190, 190);
+    /* padding: 10px; */
+    /* grid-auto-flow: column; */
+    /* grid-ro */
+    /* padding-right: -200px; */
+
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    /* gap: 20px; space between items */
+    justify-content: space-evenly;
+ }
+
+ .homegrouping .flip-card{
+  /* border:2px solid red */
+ }
+
+ .homegrouping .skyballoon{
+
+  /* grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4; */
+  
+ }
+
+ .homegrouping .wedding{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 420px;
+ }
+ .homegrouping .dabba{
+  /* margin: 0 auto; */
+  /* height: 220px; */
+  background-color:peachpuff;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+
+ }
+
+ .homegrouping .birthday{
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start:1;
+  grid-column-end:2;
+  height: 420px;
+  /* width: 100%; */
+
+ }
+ .flip-card-front {
+  /* border:2px solid blue; */
+ }
+ 
+ .homegrouping .kids{
+
+ }
+ .homegrouping .printed{
+
+ }
+ 

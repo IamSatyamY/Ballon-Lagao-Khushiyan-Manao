@@ -31,6 +31,8 @@ import InflatableTent from "./Pages/Category/InflatableTent";
 import Kids from "./Pages/Category/Kids";
 import Printed from "./Pages/Category/Printed";
 import PromotionalSky from "./Pages/Category/PromotionalSky";
+import Aboutus from "./Pages/Aboutus";
+import Form from "./Pages/Form";
 
 function App() {
   return (
@@ -41,9 +43,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<Aboutus />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/contactForm" element={<Form />} />
         {/* category */}
         <Route path="/airinflatable" element={<AirInfllatable />} />
         <Route path="/eventsetup" element={<EventSetup />} />

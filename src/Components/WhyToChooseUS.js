@@ -5,12 +5,14 @@ import { FaUserPlus } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
 import { MdLabelImportantOutline } from "react-icons/md";
 import "./WhyToChooseUS.css";
+import { Link } from 'react-router-dom';
 
 const WhyToChooseUS = () => {
   return (
-    <div className='whytochooseus'>
+    <div className='whytochooseus container' id='whyus-link'>
         
         <h1 style={{marginBottom:"-20px"}}>Why To Choose US</h1>
+        <Link to="/contactForm" className="btn btn-warning">Enquiry Form</Link>
         <div className='whytochooseus-options'>
             <div className='option'>
                 <TbTruckDelivery  className='icons'/>

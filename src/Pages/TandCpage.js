@@ -1,8 +1,13 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const TandCpage = () => {
   return (
     <div className='container text-justify' style={{marginTop:"65px"}}>
+      <Helmet>
+        <title>Terms  and  conditions</title>
+        <meta name='description' content='Terms  and  conditions'></meta>
+      </Helmet>
         <h1 className='text-center'>Terms and Conditions</h1>
         
         <ul>

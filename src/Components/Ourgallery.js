@@ -1,11 +1,12 @@
 import React from 'react';
 import './OurGallery.css';
+import { Link } from 'react-router-dom';
 
 const Ourgallery = () => {
   return (
-    <div className='gallery'>
+    <div className='gallery container' id='gallery-link'>
       <h1 className='text-center'>Some videos of our Products</h1>
-
+      <Link to="/contactForm" className="btn btn-warning">Enquiry Form</Link>
       <div className='video'>
         {[
           "NlqYSmPunH0",

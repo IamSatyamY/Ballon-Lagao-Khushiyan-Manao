@@ -1,3 +1,6 @@
+.quickview{
+  margin-top: 60px;
+}
 .quickview-div{
   /* border: 2px solid red; */
   display: flex;
@@ -6,19 +9,32 @@
 }
 .quickview h1{
   /* border: 2px solid rgb(18, 179, 144); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   text-align: center;
   font-family: sans-serif;
-  text-transform: uppercase;
-  text-decoration: underline;
+  text-transform: capitalize;
+  /* text-decoration: underline; */
   font-size: 35px;
   padding: 15px;
   margin-bottom: 20px;
   margin-top: 20px;
-  color:  rgb(57, 32, 32);
-  text-shadow: 0 2px 10px var(--gallery-header-shadow);
+  color: teal;
+  /* text-shadow: 0 2px 10px var(--gallery-header-shadow); */
   z-index: 10;
   
 }
+.quickview h1::before,
+.quickview h1::after{
+  content: '';
+  flex: 1;
+  height: 3px;
+  background-color:rgb(175, 55, 175);
+  margin: 0 10px;
+}
+
 
 .quickview-item{
   border: 1px solid rgb(194, 194, 194);
@@ -45,13 +61,15 @@
 
 .quickview-item-name{
   /* border: 2px solid green; */
+  font-size: 18px;
+  font-weight: bold;
 
   
 }
 
 .quickview-item-description{
   /* border: 2px solid blue; */
-  
+  font-size: 16px;
 }
 
 .quickview-item-button-div{
@@ -60,26 +78,35 @@
 }
 
 .quickview-item-button-div a{
-  border: 2px solid rgb(255, 128, 24);
+  border: 2px solid teal;
   width: 100%;
-  color:orange;
+  color:teal;
   background-color: #fff;
   border-radius: 50px;
   /* display: none; */
 }
 .quickview-item-button-div a:hover{
   color:white;
-  background-color: orange;
-  border:2px solid orange;
+  background-color: teal;
+  border:2px solid teal;
 }
 
 @media (max-width: 900px) {
+  .quickview{
+  margin-top: 30px;
+}
   .quickview-item{
     width: 130px;
   }
 
   .quickview h1{
     font-size: 20px;
+  }
+  .quickview-item-name{
+    font-size:16px
+  }
+  .quickview-item-description{
+    font-size: 14px;
   }
 }
 

@@ -1,22 +1,25 @@
 .dropdown .dropdown-toggle {
     text-decoration: none;
-    color: black;
+    /* color: rgb(1, 92, 95); */
+    color: teal;
+    font-weight: bold;
 }
+
 .navbar-brand{
   background-color: rgb(252, 252, 252);
-  padding: 10px;
-  border-radius: 10px;
+  padding: 0 0;
+  /* border-radius: 10px; */
 
 }
 .navbar-brand img{
     margin: 0 40px ;
-    box-shadow: 0px 6px 3px 0px rgb(0, 61, 48);
-    transition: ease 0.5s ;
+    /* box-shadow: 0px 6px 3px 0px rgb(0, 61, 48);
+    transition: ease 0.5s ; */
 }
 .navbar-brand img:hover{
     margin: 0 40px ;
-    box-shadow: 0px 6px 3px 0px rgb(0, 61, 48);
-    transform: scale(1.05);
+    /* box-shadow: 0px 6px 3px 0px rgb(0, 61, 48);
+    transform: scale(1.05); */
 }
 /* category */
 .header2-nav .dropdown-toggle, .header2-nav .nav-link{
@@ -31,6 +34,7 @@
 }
 nav{
   background-color: #ffffff;
+  
   box-shadow:0 3px 10px rgb(111, 110, 110);
   /* position: fixed; */
   /* font-family: 'Times New Roman', Times, serif; */
@@ -40,19 +44,20 @@ nav{
   border-radius: 20px;
   color: white;
   font-weight:500;
+  padding-top: 15px;
 }
 
 
 /* category elements */
 .dropdown-menu li{
     font-size: 16px;
-    background-color: rgb(183, 180, 183);
+    background-color: teal;
     font-weight: bold;
     /* border: 2px solid red; */
 }
 
 .dropdown-menu{
-  background-color: rgb(183, 180, 183);
+  background-color: teal;
 }
 
   /* Optional: Change dropdown item text color */
@@ -64,8 +69,8 @@ nav{
   
   /* Optional: Change hover background and text color */
   .dropdown-item:hover {
-    background-color: #f9cece;
-    color: #b06a6a;
+    background-color: rgb(5, 81, 81);
+    color: white;
     /* color: #3aff3e; */
   }
 .navbar-brand img{
@@ -84,6 +89,16 @@ nav{
     margin: 0 !important;
     width: 100px;
   }
+  /* .dropdown .dropdown-toggle {
+    color:white
+  } */
+  .header2-nav .dropdown-toggle, .header2-nav .nav-item .nav-link{
+    color: white;
+  }
+  .navbar{
+  background-color: teal;;
+}
+
 }
 
 
@@ -93,6 +108,10 @@ nav{
   .dropdown-menu {
     max-height: 250px; /* Adjust height as needed */
     overflow-y: auto;
+  }
+
+  #nav-home,#nav-about,#nav-contact{
+    color: white !important;
   }
 
   .dropdown-item {
@@ -119,6 +138,8 @@ nav{
   /* border:2px solid red; */
     border-bottom: 1px solid rgb(202, 202, 202);
     text-align: center;
+    background-color: teal;
+    color: white;
   }
    .nav-item Link{
     color:blue

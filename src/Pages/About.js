@@ -5,9 +5,10 @@ import { FiInstagram } from 'react-icons/fi'
 import { FaLinkedin } from 'react-icons/fa6'
 const About = () => {
   return (
-    <div className='container about' style={{marginTop:"65px"}}>
+    <div className='container about' style={{marginTop:"65px"}} id='about-link'>
 
       <h1 className='about-heading'> Our Story </h1>
+      
       {/* md page */}
       <div className='about-allinfo'>
         <div className='about-para'>
@@ -43,12 +44,16 @@ const About = () => {
           </div>
           </div>
       </div>
+      {/* head operation */}
+    
+      {/* Management team*/}
+      
 
-      {/* Management team */}
-
-      {/* Digital Marketing Team */}
+      {/* Executive Team */}
+      
 
       {/* Web Team */}
+      
     </div>
   )
 }

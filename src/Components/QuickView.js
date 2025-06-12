@@ -11,15 +11,17 @@ import latex from '../assets/Quick View/latex balloon.jpg'
 import micky from '../assets/Quick View/Mickey-Mouse-Jumping-Bouncy..jpg'
 import sky from '../assets/Quick View/sky adv balloon.png'
 import trampoline from '../assets/Quick View/trampoline.jpg'
+import { Link } from 'react-router-dom'
 
 const QuickView = () => {
   return (
-    <div className='quickview container'>
+    <div className='quickview container' id='quickview-link'>
         <h1>Quick view of our products</h1>
+        <Link to="/contactForm" className="btn btn-warning">Enquiry Form</Link>
         <div className='quickview-div'>
           {/*  */}
             <div className='quickview-item'>
-                <img className='quickview-item-img' src={helium}/>
+                <img className='quickview-item-img' src={helium} alt='helium balloon img'/>
                 <div className='quickview-item-name' >
                     <span>Helium Balloon</span>
                 </div>
@@ -35,7 +37,7 @@ const QuickView = () => {
           {/*  */}
           {/*  */}
             <div className='quickview-item'>
-                <img className='quickview-item-img' src={tent}/>
+                <img className='quickview-item-img' src={tent} alt='inflatable tent img'/>
                 <div className='quickview-item-name' >
                     <span>Inflatable Tent</span>
                 </div>
@@ -51,7 +53,7 @@ const QuickView = () => {
           {/*  */}
           {/*  */}
             <div className='quickview-item'>
-                <img className='quickview-item-img' src={dangler}/>
+                <img className='quickview-item-img' src={dangler} alt='dangler'/>
                 <div className='quickview-item-name' >
                     <span>Dangler</span>
                 </div>
@@ -67,7 +69,7 @@ const QuickView = () => {
           {/*  */}
           {/*  */}
             <div className='quickview-item'>
-                <img className='quickview-item-img' src={inflatable}/>
+                <img className='quickview-item-img' src={inflatable} alt='inflatable balloon'/>
                 <div className='quickview-item-name' >
                     <span>Inflatable Balloon</span>
                 </div>
@@ -83,7 +85,7 @@ const QuickView = () => {
           {/*  */}
           {/*  */}
             <div className='quickview-item'>
-                <img className='quickview-item-img' src={character}/>
+                <img className='quickview-item-img' src={character} alt='character balloon img'/>
                 <div className='quickview-item-name' >
                     <span>character Balloon</span>
                 </div>
@@ -99,7 +101,7 @@ const QuickView = () => {
           {/*  */}
           {/*  */}
             <div className='quickview-item'>
-                <img className='quickview-item-img' src={latex}/>
+                <img className='quickview-item-img' src={latex} alt='latex balloon'/>
                 <div className='quickview-item-name' >
                     <span>Latex Balloon</span>
                 </div>
@@ -115,7 +117,7 @@ const QuickView = () => {
           {/*  */}
           {/*  */}
             <div className='quickview-item'>
-                <img className='quickview-item-img' src={micky}/>
+                <img className='quickview-item-img' src={micky} alt='micky mouse bouncy img'/>
                 <div className='quickview-item-name' >
                     <span>Mickey Mouse Bouncy</span>
                 </div>
@@ -131,7 +133,7 @@ const QuickView = () => {
           {/*  */}
           {/*  */}
             <div className='quickview-item'>
-                <img className='quickview-item-img' src={sky}/>
+                <img className='quickview-item-img' src={sky} alt='sky advertising balloon'/>
                 <div className='quickview-item-name' >
                     <span>Sky Advertising Balloon</span>
                 </div>
@@ -147,7 +149,7 @@ const QuickView = () => {
           {/*  */}
           {/*  */}
             <div className='quickview-item'>
-                <img className='quickview-item-img' src={trampoline}/>
+                <img className='quickview-item-img' src={trampoline} alt='trampoline'/>
                 <div className='quickview-item-name' >
                     <span>Trampoline</span>
                 </div>

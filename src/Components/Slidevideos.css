@@ -1,7 +1,19 @@
+.slidevideos{
+    margin-top: 100px;
+}
 .slidevideos .carousel-item{
     /* width: 1%; */
 }
 .slidevideos .carousel-item iframe{
     width: 100%;
     height:500px;
+}
+@media(max-width:900px){
+    .slidevideos{
+    margin-top: 50px;
+}
+.slidevideos .carousel-item iframe{
+    height:250px
+
+    }
 }

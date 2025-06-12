@@ -12,13 +12,13 @@ import { Link } from 'react-router-dom';
 function Header1() {
   return (
     <div>
-        <nav className="navbar navbar-expand-lg bg-dark text-white">
+        <nav className="navbar navbar-expand-lg  header-one" style={{backgroundColor:'teal'}}>
             <div className="container-fluid d-flex justify-content-between align-items-center">
 
                 <ul className="navbar-nav mb-0" style={{ fontSize: "15px" }}>
                 <li className="nav-item" style={{borderBottom:"none"}}>
                     <a className="nav-link text-white" href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">
-                    <FaWhatsapp className="text-success fw-bold" style={{ fontSize: "20px" }}/> +917666325325
+                    <FaWhatsapp className="text-white fw-bold" style={{ fontSize: "20px",margin:" 0 10px 0 30px" }}/> +917666325325
                     </a>
                 </li>
                 <li className="nav-item" style={{borderBottom:"none"}}>
@@ -47,10 +47,11 @@ function Header1() {
             </div>
         </nav>
 
-        <span className='fixed-whatsapp'>
+        <span className='fixed-whatsapp enquiry-form'>
             <a className="nav-link text-white" href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">
-                <FaWhatsapp className=" fw-bold" style={{ fontSize: "50px" }}/>
+                <FaWhatsapp className=" fw-bold text-white bg-success" style={{ fontSize: "50px" }}/>
             </a>
+            <Link to="/contactForm" className='btn btn-warning' >Enquiry<br/>Form</Link>
         </span>
     </div>
   )
