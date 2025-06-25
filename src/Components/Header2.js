@@ -131,6 +131,11 @@ const Header2 = () => {
             <li className="nav-item">
               <Link  id='nav-contact' className="nav-link" to="/contact" onClick={closeNavbar} style={{color:'teal',fontWeight:'bold'}}>Contact</Link>
             </li>
+
+            
+            <li className="nav-item">
+              <Link  id='nav-contact' className="nav-link" to="/ourwork" onClick={closeNavbar} style={{color:'teal',fontWeight:'bold'}}>Our Work</Link>
+            </li>
           </ul>
         </div>
       </div>

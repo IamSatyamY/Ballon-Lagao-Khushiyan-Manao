@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react'
-import s1   from '../assets/homepagesliders/slider (1).jpg';
-import s2   from '../assets/homepagesliders/slider (6).png'
-import s6   from '../assets/homepagesliders/slider (7).png'
-import s3   from '../assets/homepagesliders/slider (3).jpg';
-import s4   from '../assets/homepagesliders/slider (4).jpg';
-import s5   from '../assets/homepagesliders/slider (5).jpg';
+import s1   from '../assets/homepagesliders/slider (1).png';
+import s2   from '../assets/homepagesliders/slider (2).png';
+import s3   from '../assets/homepagesliders/slider (3).png';
+// import s2   from '../assets/homepagesliders/slider (6).png'
+// import s6   from '../assets/homepagesliders/slider (8).png'
+// import s3   from '../assets/homepagesliders/slider (3).jpg';
+// import s4   from '../assets/homepagesliders/slider (4).jpg';
+// import s5   from '../assets/homepagesliders/slider (5).jpg';
 
 
 import './Sliders.css';
@@ -32,23 +34,17 @@ function Sliders() {
                     <img src={s1} className="d-block " alt="slider image"   />
                 </div>
 
-                <div className="carousel-item">
+                {/* <div className="carousel-item">
+                    <img src={s2} className="d-block " alt="slider image"   />
+                </div> */}
+                <div className="carousel-item ">
                     <img src={s2} className="d-block " alt="slider image"   />
                 </div>
                 <div className="carousel-item ">
                     <img src={s3} className="d-block " alt="slider image"   />
                 </div>
 
-                <div className="carousel-item">
-                    <img src={s4} className="d-block " alt="slider image"   />
-                </div>
-
-                <div className="carousel-item">
-                    <img src={s5} className="d-block " alt="slider image"   />
-                </div>
-                <div className="carousel-item">
-                    <img src={s6} className="d-block " alt="slider image"   />
-                </div>
+                
 
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

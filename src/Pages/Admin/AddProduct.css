@@ -1,0 +1,26 @@
+.addproduct{
+    border:2px solid red;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.addproduct h1{
+    color:rgb(241, 33, 5);
+    font-size: 20px;
+}
+
+.addproduct form{
+    border-bottom:2px solid orange;
+    padding-bottom: 10px;
+
+}
+
+.addproduct form label{
+    color:orange
+}
+
+.addproduct form button{
+    background-color: orange;
+    color:white
+}

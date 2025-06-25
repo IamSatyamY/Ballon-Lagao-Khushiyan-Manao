@@ -1,3 +1,25 @@
+.admin{
+    
+    background-color: rgba(184, 213, 247, 0.986);
+}
+.admin .admin-name-buttons{
+    /* border:2px solid red; */
+    padding: 20px;
+}
+.admin .admin-name-buttons h2{
+    color:brown;
+    font-size: 30px;
+}
+.admin .admin-name-buttons .btn{
+    background-color: #ffdb39;
+    color:black;
+    border-radius: 0px;
+    border:2px solid yellow;
+}
+.admin .admin-name-buttons .btn:hover{
+    transform: scale(1.05);
+}
+
 
 .admin-login{
     /* border: 2px solid black; */

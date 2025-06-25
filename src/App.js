@@ -33,6 +33,7 @@ import Printed from "./Pages/Category/Printed";
 import PromotionalSky from "./Pages/Category/PromotionalSky";
 import Aboutus from "./Pages/Aboutus";
 import Form from "./Pages/Form";
+import OurWork from "./Pages/OurWork";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<Aboutus />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/ourwork" element={<OurWork />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/contactForm" element={<Form />} />
         {/* category */}

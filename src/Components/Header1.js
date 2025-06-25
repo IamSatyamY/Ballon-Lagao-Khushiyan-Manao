@@ -48,7 +48,10 @@ function Header1() {
         </nav>
 
         <span className='fixed-whatsapp enquiry-form'>
-            <a className="nav-link text-white" href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">
+            {/* <Link className='btn btn-warning text-white'  style={{fontSize:"40px"}} to="/cart" target="_self" rel="noopener noreferrer">
+                        <AiOutlineShoppingCart />
+            </Link> */}
+            <a className="nav-link  text-white" href="https://wa.me/917666325325" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className=" fw-bold text-white bg-success" style={{ fontSize: "50px" }}/>
             </a>
             <Link to="/contactForm" className='btn btn-warning' >Enquiry<br/>Form</Link>

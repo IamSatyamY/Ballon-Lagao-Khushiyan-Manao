@@ -1,54 +1,93 @@
-import React from 'react'
-import './Cart.css'
-import { Link } from 'react-router-dom'
-import items  from "../data/Data"
+import React, { useState } from 'react'
+import cartimg from "../assets/mycart/9inchPrint (1).png"
+import cartimg2 from "../assets/mycart/12inchPrint (1).jpg"
+import cartimg3 from "../assets/mycart/cromPrint (1).jpg"
+import "./Cart.css"
+import { RiDeleteBinLine } from 'react-icons/ri'
+
 const Cart = () => {
+  const [cartItems, setCartItems] = useState([
+    {
+      id: 1,
+      name: '9 inch print balloon',
+      price: 123,
+      quantity: 1,
+      image: cartimg
+    },
+    {
+      id: 2,
+      name: '12 inch print balloon',
+      price: 123,
+      quantity: 1,
+      image: cartimg2
+    },
+    {
+      id: 3,
+      name: 'Crom print balloon',
+      price: 123,
+      quantity: 1,
+      image: cartimg3
+    }
+  ])
+
+  const increaseQty = (id) => {
+    setCartItems(prevItems =>
+      prevItems.map(item =>
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+      )
+    )
+  }
+
+  const decreaseQty = (id) => {
+    setCartItems(prevItems =>
+      prevItems.map(item =>
+        item.id === id && item.quantity > 1
+          ? { ...item, quantity: item.quantity - 1 }
+          : item
+      )
+    )
+  }
+
+  const removeItem = (id) => {
+    setCartItems(prevItems => prevItems.filter(item => item.id !== id))
+  }
+
+  const grandTotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0)
+
   return (
-    <div className='cartpage1' style={{marginTop:"65px"}}>
-        <h2>Items to buy</h2>
-        <div className='cartpage'>
-            {/* cart products */}
-            <div className='cart-products'>
-                {
-                    items.map(function(val,i){
-                        return(
-                            <div className='product'>
-                                <div className='item-img'>
-                                    <img src={val.imgNm} alt=''/>
-                                </div>
-                                {/* <div className='item'>{val.}</div> */}
-                                <div className='quantity'>{val.desc}</div>
-                                <div className='amount'>{val.price}</div>
-                            </div>
-                        )
-                    })
-                }
+    <div className="Cart container">
+      <h1>MY CART</h1>
 
-                {/* <div className='product'>
-                    <div className='item-img'></div>
-                    <div className='item'>500pcs Custom Printed Balloons – Personalized Balloons for Events, Business Branding, Store Décor, Grand Openings</div>
-                    <div className='quantity'>5</div>
-                    <div className='amount'>123</div>
-                </div>
-                <div className='product'>
-                    <div className='item-img'></div>
-                    <div className='item'>2000 Custom Printed Latex Balloons with Logo – Personalized Balloons for Events, Promotions, Grand Openings, Parties & Marketing Décor</div>
-                    <div className='quantity'>8</div>
-                    <div className='amount'>456</div>
-                </div> */}
+      <div className='details'>
+        <h3>
+          <div className='div1'>Product</div>
+          <div className='div2'>Quantity</div>
+          <div className='div3'>Price</div>
+        </h3>
+
+        {cartItems.map(item => (
+          <div className='product' key={item.id}>
+            <div className='product-detail'>
+              <img src={item.image} alt={item.name} />
+              <p>{item.name}</p>
             </div>
-
-            {/* checkout */}
-            <div className='checkout'>
-                <h1>checkout</h1>
-                <p>Total items : 5</p>
-                <p>Total price : ₹ 12,500</p>
-                <button>Checkout</button><br/>
-                <span><Link to="/">Continue Shopping</Link></span>
+            <div className='product-quantity'>
+              <button onClick={() => decreaseQty(item.id)}>-</button>
+              {item.quantity}
+              <button onClick={() => increaseQty(item.id)}>+</button>
+              <RiDeleteBinLine onClick={() => removeItem(item.id)} style={{ cursor: 'pointer', marginLeft: '10px' }} />
             </div>
+            <div className='product-price'>
+              ₹ {item.price * item.quantity}
+            </div>
+          </div>
+        ))}
+      </div>
 
-
-        </div>
+      <div className='checkout'>
+        <h2>Grand Total: Rs. {grandTotal}</h2>
+        <button className='btn btn-success'>Checkout</button>
+      </div>
     </div>
   )
 }

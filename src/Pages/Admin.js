@@ -14,15 +14,15 @@ const Admin = () => {
 //   }, []);
 
   return (
-    <div>
+    <div className='admin'>
         {/* {data} */}
         <div className="container admin-component">
             <div className="row text-center border border-2 rounded-3 mt-5">
-                <div >
+                <div className='admin-name-buttons'>
                     <h2>Admin</h2>
                     <div className='text-center dflex justify-content-center align-items-center'>
-                        <Link to="addproduct"><p className='btn btn-primary mx-2'>Add Product</p></Link>
                         <Link to="category"><p className='btn btn-primary mx-2'>Add Category</p></Link>
+                        <Link to="addproduct"><p className='btn btn-primary mx-2'>Add Product</p></Link>
                         <Link to="viewproduct"><p className='btn btn-primary mx-2'>View Product</p></Link>
                         <Link to="orders"><p className='btn btn-primary mx-2'>Orders</p></Link>
                         <Link to="user"><p className='btn btn-primary mx-2'>Users</p></Link>

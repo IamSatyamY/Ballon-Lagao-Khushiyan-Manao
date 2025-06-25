@@ -1,0 +1,178 @@
+.project-section {
+  padding: 60px 0px;
+  background-color: rgb(233, 232, 232);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin-top: -50px;
+}
+
+.project-section  .section-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: inherit;
+}
+
+.project-section  .project-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+
+.project-section  .project-container .project-image {
+  flex: 1;
+  /* min-width: 300px; */
+  /* max-width: 50%; */
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.project-section  .project-container .project-image img,
+.project-section  .project-container .project-image iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: none;
+}
+
+.project-section  .project-container .project-content {
+  flex: 1;
+  padding: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-section  .project-container .project-content strong {
+  color: #0b74de;
+}
+
+.project-section  .project-container .youtube-skyballoon{
+  height: 500px;
+  /* border:2px solid red; */
+}
+.project-section  .project-container .youtube-skyballoon iframe{
+  height: 500px;
+  /* border:2px solid red; */
+
+}
+
+.project-section .certificate{
+  /* border:2px solid red; */
+  display:flex
+}
+
+.project-section .ministry-certificate{
+    /* border:2px solid red; */
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.project-section .ministry-certificate img{
+    /* border:2px solid red; */
+    width:80%;
+
+}
+.project-section .ministry-certificate a{
+    width:100px;
+}
+
+.project-section .catalogue-section{
+  padding-top: 50px;
+}
+.project-section .catalogue-section h2{
+  color:brown
+}
+
+.project-section .catalogue-section .catalogue-container{
+  /* border : 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project-section .catalogue-section h2{
+  text-align: center;
+}
+
+.project-section .catalogue-section .catalogue-container .catalogue{
+  /* border: 1px solid rgb(180, 2, 2); */
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  margin:10px;
+}
+.project-section .catalogue-section .catalogue-container .catalogue img{
+  width: 100px;
+  height: 100px;
+}
+
+.responsive-iframe {
+      height: 550px;
+    }
+
+@media (max-width: 900px) {
+  .project-section{
+    /* border:10px solid rgb(209, 179, 6); */
+  }
+  .project-section .project-container {
+    flex-direction: column;
+    /* border:10px solid rgb(209, 179, 6); */
+  }
+
+  .project-section .project-image,
+  .project-section .project-content {
+    width: 100%;
+    padding: 10px;
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-section .project-image {
+    order: -1; /* Moves it to the top */
+  }
+
+  .project-section .section-title {
+    font-size: 1.8rem;
+  }
+
+  .project-section .project-content {
+    font-size: 1rem;
+  }
+  .project-section  .project-container .youtube-skyballoon iframe{
+    height: 400px;
+    /* border:2px solid red; */
+
+}
+
+.project-section .certificate{
+  /* display: block; */
+}
+  
+  .project-section  .ministry-certificate{
+    /* border:2px solid grey; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-section  .ministry-certificate img{
+    width: 100%;
+  }
+  .project-section .catalogue-section .catalogue-container .catalogue{
+  padding: 10px;
+  width: 150px;
+}
+}
