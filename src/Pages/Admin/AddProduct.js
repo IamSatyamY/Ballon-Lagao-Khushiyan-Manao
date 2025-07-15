@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./AddProduct.css";
 import { useNavigate } from "react-router-dom";
+import { TiPlusOutline } from "react-icons/ti";
 
 const AddProduct = () => {
     const [message, setMessage] = useState("");
@@ -15,7 +16,7 @@ const AddProduct = () => {
 
     const fetchProducts = async () => {
         try {
-            const response = await fetch("/admin/viewproduct");
+            const response = await fetch("/api/admin/viewproduct");
             const data = await response.json();
             setProducts(data);
         } catch (error) {
@@ -29,8 +30,8 @@ const AddProduct = () => {
 
         const method = editingProduct ? "PUT" : "POST";
         const endpoint = editingProduct
-            ? `/admin/updateProduct/${editingProduct.id}`
-            : "/admin/saveProduct";
+            ? `/api/admin/updateProduct/${editingProduct.id}`
+            : "/api/admin/saveProduct";
 
         try {
             const response = await fetch(endpoint, {
@@ -76,7 +77,7 @@ const AddProduct = () => {
                 }
 
                 setEditingProduct(null);
-                // navigate("/admin/addproduct");
+                navigate("/admin/addproduct");   
                 e.target.reset(); // Clear form
 
             }
@@ -88,7 +89,7 @@ const AddProduct = () => {
 
     const handleDelete = async (id) => {
         try {
-            const res = await fetch(`/admin/deleteProduct/${id}`, {
+            const res = await fetch(`/api/admin/deleteProduct/${id}`, {
                 method: "DELETE",
             });
             const data = await res.json();
@@ -104,24 +105,24 @@ const AddProduct = () => {
 
     const handleEdit = async (product) => {
         setEditingProduct(product);
-        setImageUrl(`/admin/uploads/product?filename=${product.image}`);
+        setImageUrl(`/api/admin/uploads/product?filename=${product.image}`);
     };
 
     return (
-        <div className="addproduct container dflex flex-col justify-center items-center ">
-            <h1>{editingProduct ? "Edit Product" : "Add Product"}</h1>
+        <div className="addproduct container dflex justify-center items-center ">
+            <h1><TiPlusOutline />{editingProduct ? "Edit Product" : "Add Product"}</h1>
             {message && <p className="alert">{message}</p>}
 
             <form onSubmit={handleSubmit} encType="multipart/form-data">
-                <label>Enter Title<br />
+                <label>Enter Title:<br />
                     <input type="text" name="title" defaultValue={editingProduct?.title || ""} required />
-                </label><br /><br />
+                </label><hr />
 
-                <label>Enter Description<br />
+                <label>Enter Description:<br />
                     <textarea name="description" defaultValue={editingProduct?.description || ""} required></textarea>
-                </label><br /><br />
+                </label><hr />
 
-                <label>Category<br />
+                <label>Category:<br />
                     <select name="category" defaultValue={editingProduct?.category || ""} required>
                         <option value="">Select</option>
                         <optgroup label="Products">
@@ -142,21 +143,21 @@ const AddProduct = () => {
                             <option value="blimpshape">Blimp Shape</option>
                         </optgroup>
                     </select>
-                </label><br /><br />
+                </label><hr />
 
-                <label>Enter Price<br />
+                <label>Enter Price:<br />
                     <input type="number" name="price" defaultValue={editingProduct?.price || ""} required />
-                </label><br /><br />
+                </label><hr />
 
-                <label>Enter Stock<br />
+                {/* <label>Enter Stock:<br />
                     <input type="number" name="stock" defaultValue={editingProduct?.stock || ""} required />
-                </label><br /><br />
+                </label><hr /> */}
 
-                <label>Upload Image<br />
+                <label>Upload Image:<br />
                     <input type="file" name="file" />
-                </label><br /><br />
+                </label><hr />
 
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="btn border">
                     {editingProduct ? "Update Product" : "Add Product"}
                 </button>
             </form>
@@ -168,7 +169,7 @@ const AddProduct = () => {
                 </div>
             )}
 
-            <div className="product-list text-center mt-3">
+            <div className="product-list text-center">
                 <h2>Product List</h2>
                 <table className="table table-bordered">
                     <thead>
@@ -193,10 +194,10 @@ const AddProduct = () => {
                                 <td>₹{product.price}</td>
                                 <td>{product.stock}</td>
                                 <td>
-                                    <img src={`/admin/uploads/product?filename=${product.image}`} alt={product.title} style={{ width: "100px" }} />
+                                    <img src={`/api/admin/uploads/product?filename=${product.image}`} alt={product.title} style={{ width: "100px" }} />
                                 </td>
                                 <td>
-                                    {/* <button className="btn btn-warning" onClick={() => handleEdit(product)}>Edit</button> */}
+                                    <button className="btn btn-warning" onClick={() => handleEdit(product)}>Edit</button>
                                     <button className="btn btn-danger" onClick={() => handleDelete(product.id)}>Delete</button>
                                 </td>
                             </tr>

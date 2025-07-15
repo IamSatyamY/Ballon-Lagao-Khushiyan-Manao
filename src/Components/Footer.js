@@ -85,7 +85,7 @@ const Footer = () => {
         </div>  */}
         <hr/>
         {/* <p class="copyright">Lorem ipsum dolor sit amet consectetur adipisicing elit</p> */}
-      <p className='copyright'>Copyright &copy; BalloonLagao 2025 | All Right Reserved | <Link style={{color:'white'}} to="/tandc">Terms and Conditions Apply</Link></p>
+      <p className='copyright'>Copyright &copy; BalloonLagao 2025 | All Right Reserved | <Link style={{color:'white'}} to="/tandc">Terms and Conditions Apply</Link> | <Link to="/privacy">Privacy Policy</Link></p>
     </footer>
       
     </>

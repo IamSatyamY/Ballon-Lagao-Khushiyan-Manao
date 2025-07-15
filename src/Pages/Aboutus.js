@@ -66,17 +66,7 @@ const Aboutus = () => {
                 </p>
 
             </div>
-            <div className='other-emp-info'>
-                <img src={manageimg2}alt='management team img'></img>
-                <p className='other-emp-name'>
-                 Mr. Usman Mukadam
-
-                </p>
-                <p className='other-emp-desgn'>
-                    Management Team
-                </p>
-
-            </div>
+        
             <div className='other-emp-info'>
                 <img src={manageimg1} alt='management team img'></img>
                 <p className='other-emp-name'>
@@ -88,16 +78,7 @@ const Aboutus = () => {
                 </p>
 
             </div>
-            <div className='other-emp-info'>
-                <img src={manageimg3} alt='management team img'></img>
-                <p className='other-emp-name'>
-                     Mr. Firoz Khan
-                </p>
-                <p className='other-emp-desgn'>
-                    Operation Manager
-                </p>
-
-            </div>
+            
             <div className='other-emp-info'>
                 <img src={digitalhead} alt='digital marketing head img'></img>
                 <p className='other-emp-name'>

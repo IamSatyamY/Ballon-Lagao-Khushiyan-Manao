@@ -1,28 +1,65 @@
 .admin{
-    
-    background-color: rgba(184, 213, 247, 0.986);
+    background-color: #f8f9fa; /* Light gray background */
+    display: flex;
+    min-height: calc(100vh - 100px); /* Adjust based on header/footer height */
 }
-.admin .admin-name-buttons{
-    /* border:2px solid red; */
-    padding: 20px;
+
+.admin .admin-component{
+    width: 20%;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    padding-top: 20px; /* Adjust as needed */
+    background-color: #343a40; /* Darker sidebar for contrast */
+    color: #ffffff; /* White text for sidebar */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
+
 .admin .admin-name-buttons h2{
-    color:brown;
+    color: #ffffff; /* White text for Admin heading */
     font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
 }
-.admin .admin-name-buttons .btn{
-    background-color: #ffdb39;
-    color:black;
+
+.admin .admin-name-buttons .admin-buttons{
+    text-align: left;
+}
+
+.admin .admin-name-buttons a{
+    color:rgb(230, 197, 16); /* Keep existing yellow/gold for links */
     border-radius: 0px;
-    border:2px solid yellow;
+    border-bottom:2px solid rgba(230, 197, 16, 0.5); /* Softer yellow border */
+    width: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
-.admin .admin-name-buttons .btn:hover{
+
+.admin .admin-name-buttons a:hover{
+    background-color: #495057; /* Slightly lighter dark on hover */
     transform: scale(1.05);
 }
 
+.admin .admin-name-buttons a p{
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.admin-main-content {
+    width: 80%;
+    padding: 20px;
+    color: #343a40; /* Dark text for main content on light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
 
 .admin-login{
-    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     height:700px;
@@ -32,7 +69,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position:  0;
-    /* background-color: rgb(19, 64, 64); */
 }
 .admin-login input{
     width: 300px;

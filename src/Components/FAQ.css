@@ -80,6 +80,23 @@ h2.accordion-header button:active{
 .accordion-button:focus {
   box-shadow: none !important;
 }
+
+.faq .btn-warning {
+    background-color: teal; /* Changed to teal */
+    border-color: teal;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.faq .btn-warning:hover {
+    background-color: darkcyan; /* Darker teal on hover */
+    border-color: darkcyan;
+}
+
 @media(max-width:900px){
     .faq{
     margin-top: 40px;

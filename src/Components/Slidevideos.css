@@ -1,19 +1,35 @@
 .slidevideos{
     margin-top: 100px;
-}
-.slidevideos .carousel-item{
-    /* width: 1%; */
+    padding: 20px;
 }
 .slidevideos .carousel-item iframe{
     width: 100%;
-    height:500px;
+    height: 500px; /* Maintain consistent height */
+    border-radius: 10px; /* Rounded corners for video frames */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
+
+/* Carousel Controls */
+.slidevideos .carousel-control-prev-icon,
+.slidevideos .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  border-radius: 50%;
+  padding: 10px;
+  opacity: 0.8; /* Slightly less opaque */
+  transition: opacity 0.3s ease; /* Smooth transition on hover */
+}
+
+.slidevideos .carousel-control-prev-icon:hover,
+.slidevideos .carousel-control-next-icon:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
 @media(max-width:900px){
     .slidevideos{
     margin-top: 50px;
+    padding: 10px;
 }
 .slidevideos .carousel-item iframe{
-    height:250px
-
+    height: 250px;
     }
 }

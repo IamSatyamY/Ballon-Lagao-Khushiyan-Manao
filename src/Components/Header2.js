@@ -20,28 +20,36 @@ const Header2 = () => {
         </button>
 
         <div className={`collapse navbar-collapse header2-nav ${isOpen ? 'show' : ''}`}>
-          <ul className="navbar-nav w-100 d-flex justify-content-center justify-content-lg-between" style={{ fontSize: "20px" }}>
+          <ul className="navbar-nav w-100 d-flex justify-content-center justify-content-lg-between" style={{ fontSize: "20px", paddingRight: "50px" }}>
 
-            {/* Home & About */}
+            {/* Home */}
             <li className="nav-item">
               <Link id='nav-home' className="nav-link active" to="/" onClick={closeNavbar} style={{color:'teal',fontWeight:'bold'}}>Home</Link>
             </li>
-            <li className="nav-item">
-              <Link  id='nav-about' className="nav-link" to="/about" onClick={closeNavbar} style={{color:'teal',fontWeight:'bold'}}>AboutUs</Link>
-            </li>
 
-            {/* Products */}
-            <li className="nav-item dropdown">
+            {/* Products (Top Level) */}
+            {/* <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown">Products</Link>
               <ul className="dropdown-menu">
                 <li><Link className="dropdown-item" to="/product#latex" onClick={closeNavbar}>Latex Balloon</Link></li>
                 <li><Link className="dropdown-item" to="/product#party" onClick={closeNavbar}>Party Item</Link></li>
                 <li><Link className="dropdown-item" to="/product#foil" onClick={closeNavbar}>Foil Balloons</Link></li>
               </ul>
+            </li> */}
+
+            {/* Products (Top Level - Updated) */}
+            <li className="nav-item dropdown">
+              <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown">ProductsBuy</Link>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" to="/products?category=latex" onClick={closeNavbar}>Latex Balloons</Link></li>
+                <li><Link className="dropdown-item" to="/products?category=party" onClick={closeNavbar}>party Items</Link></li>
+                <li><Link className="dropdown-item" to="/products?category=foil" onClick={closeNavbar}>Foil Balloons</Link></li>
+              </ul>
             </li>
 
-            {/* Printed Balloon */}
-            <li className="nav-item dropdown">
+
+            {/* Printed Balloon (Top Level) */}
+            {/* <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown">Printed Balloon</Link>
               <ul className="dropdown-menu">
                 <li><Link className="dropdown-item" to="/printed#9_inch_print" onClick={closeNavbar}>9 inch Print Balloon</Link></li>
@@ -50,27 +58,46 @@ const Header2 = () => {
                 <li><Link className="dropdown-item" to="/printed#metalic_print" onClick={closeNavbar}>Metallic Print Balloon</Link></li>
                 <li><Link className="dropdown-item" to="/printed#36_inch_print" onClick={closeNavbar}>36 inch Print Balloon</Link></li>
               </ul>
+            </li> */}
+
+
+             {/* printd balloon (Top Level - Updated) */}
+            <li className="nav-item dropdown">
+              <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown">PrintedBalloonBuy</Link>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" to="/products?category=9inch" onClick={closeNavbar}>9 inch Printed Balloons</Link></li>
+                <li><Link className="dropdown-item" to="/products?category=12inch" onClick={closeNavbar}>12 inch Printed Balloon</Link></li>
+                <li><Link className="dropdown-item" to="/products?category=36inch" onClick={closeNavbar}>36 inch Print Balloon</Link></li>
+                <li><Link className="dropdown-item" to="/products?category=cromprint" onClick={closeNavbar}>Crom Print Balloon</Link></li>
+                <li><Link className="dropdown-item" to="/products?category=metallicprint" onClick={closeNavbar}>Metalic Print Balloon</Link></li>
+              </ul>
             </li>
 
-            {/* Promotional Sky Balloon */}
-            <li className="nav-item dropdown">
+
+            {/* Promotional Sky (Top Level) */}
+            {/* <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown">Promotional Sky</Link>
               <ul className="dropdown-menu">
-                {/* {[6, 7, 8, 9, 10, 11, 12].map(size => (
-                  <li key={size}>
-                    <Link className="dropdown-item" to={`/promotionalsky#${size}_feet_print`} onClick={closeNavbar}>
-                      {size} Feet Print Balloon
-                    </Link>
-                  </li>
-                ))} */}
-
                 <li><Link className="dropdown-item" to="/promotionalsky#6to14" onClick={closeNavbar}>6-14 ft Print Balloon</Link></li>
                 <li><Link className="dropdown-item" to="/promotionalsky#square_shape" onClick={closeNavbar}>Square Shape</Link></li>
                 <li><Link className="dropdown-item" to="/promotionalsky#blimp_shape" onClick={closeNavbar}>Blimp Shape</Link></li>
-                
-
+              </ul>
+            </li> */}
+            
+            {/* Promotional Sky (Top Level - Updated) */}
+            <li className="nav-item dropdown">
+              <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown">Promotional Sky</Link>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" to="/products?category=6to14" onClick={closeNavbar}>6-14 ft Print Balloon</Link></li>
+                <li><Link className="dropdown-item" to="/products?category=squareshape" onClick={closeNavbar}>Square Shape</Link></li>
+                <li><Link className="dropdown-item" to="/products?category=blimpshape" onClick={closeNavbar}>Blimp Shape</Link></li>
               </ul>
             </li>
+
+            {/* Buy */}
+            {/* <li className="nav-item">
+              <Link id='nav-buy' className="nav-link" to="/buy" onClick={closeNavbar}>Buy</Link>
+            </li> */}
 
             {/* Air Inflatable Balloon */}
             <li className="nav-item dropdown">
@@ -127,14 +154,14 @@ const Header2 = () => {
               </ul>
             </li>
 
-            {/* Contact */}
-            <li className="nav-item">
-              <Link  id='nav-contact' className="nav-link" to="/contact" onClick={closeNavbar} style={{color:'teal',fontWeight:'bold'}}>Contact</Link>
-            </li>
-
-            
-            <li className="nav-item">
-              <Link  id='nav-contact' className="nav-link" to="/ourwork" onClick={closeNavbar} style={{color:'teal',fontWeight:'bold'}}>Our Work</Link>
+            {/* More */}
+            <li className="nav-item dropdown">
+              <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown">More</Link>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" to="/about" onClick={closeNavbar}>About Us</Link></li>
+                <li><Link className="dropdown-item" to="/contact" onClick={closeNavbar}>Contact</Link></li>
+                <li><Link className="dropdown-item" to="/ourwork" onClick={closeNavbar}>Our Work</Link></li>
+              </ul>
             </li>
           </ul>
         </div>

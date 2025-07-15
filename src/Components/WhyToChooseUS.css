@@ -1,7 +1,7 @@
 .whytochooseus{
-    /* border:2px solid red; */
-    background-color: #fff;
+    background-color: #f8f9fa; /* Light gray background for the section */
     margin-top: 80px;
+    padding: 20px;
 }
 .whytochooseus h1{
     display: flex;
@@ -10,90 +10,108 @@
     position: relative;
     text-align: center;
     padding: 10px;
-    font-family:roboto;
+    font-family: 'Roboto', sans-serif; /* Consistent font */
     z-index: 100;
-    /* border-radius: 10px; */
     margin-top: 20px;
-    color: teal;
-    font-size: 35px;
-    text-transform: capitalize;
-    /* text-decoration: underline; */
-
+    color: #2c3e50; /* Darker, more professional heading color */
+    font-size: 38px;
+    text-transform: uppercase; /* Uppercase for professionalism */
+    margin-bottom: 30px; /* Adjusted margin */
 }
 .whytochooseus h1::before,
 .whytochooseus h1::after{
- content: '';
+  content: '';
   flex: 1;
   height: 3px;
-  background-color:rgb(175, 55, 175);
-  margin: 0 10px;
+  background-color: #3498db; /* Professional blue for lines */
+  margin: 0 15px;
 }
 
 .whytochooseus-options{
-    /* border:3px solid green; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    /* margin-top: -10px; */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Add gap for consistent spacing */
     padding: 40px 0;
-   background-color:rgb(255, 255, 255);
-    z-index: -10;
+    background-color: #f8f9fa; /* Match section background */
 }
 .whytochooseus-options .option{
-    /* border:3px solid rgb(212, 111, 22); */
     text-align: center;
     font-size: 50px;
-    background-color: rgb(255, 255, 255);
-    color:rgb(255, 255, 255);
+    background-color: #ffffff; /* White background for options */
+    color: grey; /* Reverted to grey for icons */
     border-radius: 10px;
-    width: 150px;
-    height: 150px;
-    /* padding: 20px; */
-    /* padding-top: 20px; */
-    box-shadow: 0 5px 5px rgb(39, 2, 41);
-    transition: ease 0.5s;
+    width: 180px; /* Increased width */
+    height: 180px; /* Increased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition */
     margin: 10px; 
 }
 .whytochooseus-options .option:hover{
-    transform: scale(1.05);
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 .whytochooseus-options .option .icons{
-    color:grey;
+    color: grey; /* Reverted to grey for icons */
+    font-size: 60px; /* Larger icons */
+    margin-bottom: 10px;
 }
 .whytochooseus-options .option p{
-    font-weight: BOLD;
+    font-weight: 600; /* Bolder text */
     font-size: 16px;
-    font-family: poppins;
-    color:rgb(142, 133, 138);
+    font-family: 'Poppins', sans-serif; /* Consistent font */
+    color: #555; /* Darker text for readability */
+    margin: 0;
+}
+
+.whytochooseus .btn-warning {
+    background-color: #ffc107; /* Bootstrap warning yellow */
+    border-color: #ffc107;
+    color: #212529;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.whytochooseus .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
 }
 
 @media screen and (max-width: 800px) {
     .whytochooseus{
     margin-top: 40px;
+    padding: 10px;
 }
     .whytochooseus-options {
-        /* flex-direction: column; */
         align-items: center;
     }
 
     .whytochooseus-options .option {
-        width: 22vw;
-        height: 18vw;
-        font-size: 18px;
-        /* border-radius: 50%; */
-        /* padding-top: 40px; */
+        width: 45%; /* Adjusted for smaller screens */
+        height: 150px;
+        font-size: 40px;
+    }
+    .whytochooseus-options .option .icons{
+        font-size: 50px;
     }
     .whytochooseus-options .option p{
-        font-size: 10px;
-
+        font-size: 14px;
     }
 }
 
-@media (max-width: 900px) {
-  .whytochooseus{
-    margin-top: 40px;
-}
-  .whytochooseus h1 {
-    font-size: 20px;
-  }
+@media (max-width: 576px) {
+    .whytochooseus-options .option {
+        width: calc(33.33% - 15px); /* Display 3 icons per row on very small screens */
+        height: 160px;
+    }
+    .whytochooseus h1 {
+        font-size: 24px;
+    }
 }

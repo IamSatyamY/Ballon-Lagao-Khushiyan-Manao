@@ -1,37 +1,39 @@
 import React, { useEffect, useState } from 'react'
 import "./Admin.css"
 import axios from 'axios'
-import { Link, Outlet } from 'react-router'
+import { Link, Outlet, useLocation } from 'react-router-dom'
+import { BiCategory } from 'react-icons/bi'
+import { TiPlusOutline } from 'react-icons/ti'
+import { FaRegEye } from 'react-icons/fa'
+import { IoBagCheckOutline } from 'react-icons/io5'
+import { LuUsers } from 'react-icons/lu'
+import { RiAdminLine } from 'react-icons/ri'
 
 const Admin = () => {
-
-//     const [data, setData] = useState("");
-
-//     useEffect(() => {
-//     axios.get("http://localhost:8080/admin/index")
-//       .then(response => setData(response.data))
-//       .catch(error => console.error("Error:", error));
-//   }, []);
+  const location = useLocation();
 
   return (
     <div className='admin'>
-        {/* {data} */}
         <div className="container admin-component">
-            <div className="row text-center border border-2 rounded-3 mt-5">
-                <div className='admin-name-buttons'>
+            <div className='admin-name-buttons'>
                     <h2>Admin</h2>
-                    <div className='text-center dflex justify-content-center align-items-center'>
-                        <Link to="category"><p className='btn btn-primary mx-2'>Add Category</p></Link>
-                        <Link to="addproduct"><p className='btn btn-primary mx-2'>Add Product</p></Link>
-                        <Link to="viewproduct"><p className='btn btn-primary mx-2'>View Product</p></Link>
-                        <Link to="orders"><p className='btn btn-primary mx-2'>Orders</p></Link>
-                        <Link to="user"><p className='btn btn-primary mx-2'>Users</p></Link>
-                        <Link to="addadmin"><p className='btn btn-primary mx-2'>Add Admin</p></Link>
+                    <div className='admin-buttons'>
+                        {/* <Link to="category" onClick={() => window.scrollTo(0, 0)}><BiCategory /><p className=' '>Add Category </p></Link> */}
+                        <Link to="addproduct" onClick={() => window.scrollTo(0, 0)}><TiPlusOutline /><p className=' '> Add Product</p></Link>
+                        <Link to="viewproduct" onClick={() => window.scrollTo(0, 0)}><FaRegEye /><p className=' '>View Product</p></Link>
+                        <Link to="orders" onClick={() => window.scrollTo(0, 0)}><IoBagCheckOutline /><p className=' '>Orders</p></Link>
+                        <Link to="user" onClick={() => window.scrollTo(0, 0)}><LuUsers /><p className=' '>Users</p></Link>
+                        <Link to="addadmin" onClick={() => window.scrollTo(0, 0)}><RiAdminLine /><p className=' '>Add Admin</p></Link>
                     </div>
                 </div>
             </div>
-        </div>
-                        <Outlet/>
+            <div className="admin-main-content">
+                {location.pathname === '/admin' ? (
+                    <h1 className="admin-panel-text">Admin Panel</h1>
+                ) : (
+                    <Outlet />
+                )}
+            </div>
     </div>
   )
 }

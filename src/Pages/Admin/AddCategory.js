@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./AddCategory.css"
 import { useNavigate } from "react-router-dom";
+import { BiCategory } from "react-icons/bi";
 
 const AddCategory = () => {
     const [message, setMessage] = useState("");
@@ -15,7 +16,7 @@ const AddCategory = () => {
 
     const fetchCategories = async () => {
         try {
-            const response = await fetch("/admin/category");
+            const response = await fetch("/api/admin/category");
             const result = await response.json();
             setCategories(result);
         } catch (error) {
@@ -25,7 +26,7 @@ const AddCategory = () => {
 
     const handleEdit = async (id) => {
         try {
-            const response = await fetch(`/admin/editCategory/${id}`);
+            const response = await fetch(`/api/admin/editCategory/${id}`);
 
             if (!response.ok) {
                 throw new Error("Category not found or invalid response");
@@ -33,7 +34,7 @@ const AddCategory = () => {
 
             const category = await response.json();
             setEditingCategory(category);
-            setImageUrl(`/admin/uploads?filename=${category.imageName}`);
+            setImageUrl(`/api/admin/uploads?filename=${category.imageName}`);
         } catch (error) {
             console.error("Error loading category:", error);
             setMessage("Failed to load category. Please try again.");
@@ -45,7 +46,7 @@ const AddCategory = () => {
         const formData = new FormData(event.target);
 
         const method = editingCategory ? "PUT" : "POST";
-        const endpoint = editingCategory ? `/admin/updateCategory/${editingCategory.id}` : "/admin/saveCategory";
+        const endpoint = editingCategory ? `/api/admin/updateCategory/${editingCategory.id}` : "/api/admin/saveCategory";
 
         try {
             const response = await fetch(endpoint, {
@@ -91,7 +92,7 @@ const AddCategory = () => {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`/admin/deleteCategory/${id}`, {
+            const response = await fetch(`/api/admin/deleteCategory/${id}`, {
                 method: "DELETE",
             });
 
@@ -109,17 +110,17 @@ const AddCategory = () => {
 
     return (
         <div className="addcategory container dflex justify-center items-center ">
-            <h1>{editingCategory ? "Edit Category" : "Add Category"}</h1>
+            <h1><BiCategory />{editingCategory ? "Edit Category" : "Add Category"}</h1>
             {message && <p className="alert">{message}</p>}
             <form onSubmit={handleSubmit} encType="multipart/form-data">
                 <label>
-                    Enter Category <br />
+                    Enter Category : <br />
                     <input type="text" name="name" defaultValue={editingCategory?.name || ""} required />
                 </label>
-                <br /><br />
+                <hr/>
 
                 <label>
-                    Enter Status <br />
+                    Enter Status :<br />
                     <div className="form-check">
                         <input className="form-check-input" type="radio" name="isActive" value="true" defaultChecked={editingCategory?.isActive === true} required />
                         <label className="form-check-label">Active</label>
@@ -129,15 +130,15 @@ const AddCategory = () => {
                         <label className="form-check-label">Inactive</label>
                     </div>
                 </label>
-                <br /><br />
+                <hr/>
 
                 <label>
-                    Upload image <br />
+                    Upload image :<br />
                     <input type="file" name="file" />
                 </label>
-                <br /><br />
+                <hr/>
 
-                <button className="btn btn-primary" type="submit">
+                <button className="btn border" type="submit">
                     {editingCategory ? "Update" : "Save"}
                 </button>
             </form>
@@ -167,7 +168,7 @@ const AddCategory = () => {
                                 <td>{index + 1}</td>
                                 <td>{category.name}</td>
                                 <td>
-                                    <img src={`/admin/uploads?filename=${category.imageName}`} style={{ width: "100px" }} alt={category.name} />
+                                    <img src={`/api/admin/uploads?filename=${category.imageName}`} style={{ width: "100px" }} alt={category.name} />
                                 </td>
                                 <td>{category.isActive ? "Active" : "Inactive"}</td>
                                 <td>
